@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Sign Up - Ek-Drishti Digital Hub | Create Your Account</title>
+    <meta name="description" content="Create your Ek-Drishti Digital Hub account to access government services, tools, and personalized features.">
+    <meta name="keywords" content="signup, register, create account, government services, digital hub">
+    <meta name="author" content="Ek-Drishti Digital Hub">
+    
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Sign Up - Ek-Drishti Digital Hub">
+    <meta property="og:description" content="Create your account to access government services and digital tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ek-drishti-hub.github.io/signup.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/color/32/domain.png" type="image/png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header sticky-header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="brand">
+                    <div class="logo">
+                        <img src="https://img.icons8.com/color/24/domain.png" alt="Logo">
+                    </div>
+                    <div class="brand-text">
+                        <h1>Ek-Drishti</h1>
+                        <p>Digital Hub</p>
+                    </div>
+                </div>
+
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="tools.html" class="nav-link">Tools</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="login.html" class="btn btn-secondary">Sign In</a>
+                    
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="services.html" class="mobile-nav-link">Services</a>
+                    <a href="tools.html" class="mobile-nav-link">Tools</a>
+                    <a href="blog.html" class="mobile-nav-link">Blog</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <a href="login.html" class="btn btn-secondary">Sign In</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- SIGNUP SECTION -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container signup-container">
+                <!-- Signup Form Side -->
+                <div class="auth-form-side">
+                    <div class="auth-form-container">
+                        <div class="auth-header">
+                            <h2>Create Your Account</h2>
+                            <p>Join Ek-Drishti Digital Hub to access government services and tools</p>
+                        </div>
+
+                        <form id="signupForm" class="auth-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required placeholder="First name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="signupEmail">Email Address</label>
+                                <input type="email" id="signupEmail" name="email" required placeholder="Enter your email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Mobile Number</label>
+                                <div class="phone-input">
+                                    <select class="country-code">
+                                        <option value="+91">🇮🇳 +91</option>
+                                        <option value="+1">🇺🇸 +1</option>
+                                        <option value="+44">🇬🇧 +44</option>
+                                    </select>
+                                    <input type="tel" id="phone" name="phone" required placeholder="Mobile number">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="organization">Organization/Department</label>
+                                <select id="organization" name="organization" required>
+                                    <option value="">Select your organization</option>
+                                    <option value="central-govt">Central Government</option>
+                                    <option value="state-govt">State Government</option>
+                                    <option value="local-govt">Local Government</option>
+                                    <option value="psu">Public Sector Undertaking</option>
+                                    <option value="private">Private Organization</option>
+                                    <option value="educational">Educational Institution</option>
+                                    <option value="ngo">NGO/Non-Profit</option>
+                                    <option value="individual">Individual User</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="signupPassword">Password</label>
+                                <div class="password-input">
+                                    <input type="password" id="signupPassword" name="password" required placeholder="Create a strong password">
+                                    <button type="button" class="password-toggle" onclick="togglePassword('signupPassword')">
+                                        <span class="show-icon">👁️</span>
+                                        <span class="hide-icon" style="display: none;">🙈</span>
+                                    </button>
+                                </div>
+                                <div class="password-strength" id="passwordStrength">
+                                    <div class="strength-bar">
+                                        <div class="strength-fill" id="strengthFill"></div>
+                                    </div>
+                                    <span class="strength-text" id="strengthText">Enter password</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <div class="password-input">
+                                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                                    <button type="button" class="password-toggle" onclick="togglePassword('confirmPassword')">
+                                        <span class="show-icon">👁️</span>
+                                        <span class="hide-icon" style="display: none;">🙈</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terms" id="terms" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="privacy-link">Privacy Policy</a>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" id="signupNewsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to newsletter for updates and announcements
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary auth-btn">Create Account</button>
+
+                            <div class="auth-divider">
+                                <span>or sign up with</span>
+                            </div>
+
+                            <div class="social-login">
+                                <button type="button" class="btn btn-social google">
+                                    <img src="https://img.icons8.com/color/20/google-logo.png" alt="Google">
+                                    Google
+                                </button>
+                                <button type="button" class="btn btn-social microsoft">
+                                    <img src="https://img.icons8.com/color/20/microsoft.png" alt="Microsoft">
+                                    Microsoft
+                                </button>
+                            </div>
+
+                            <div class="auth-footer">
+                                <p>Already have an account? <a href="login.html">Sign in</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Info Side -->
+                <div class="auth-info-side">
+                    <div class="auth-info-content">
+                        <h3>Why Create an Account?</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <span class="feature-icon">⚡</span>
+                                <div>
+                                    <h4>Fast Access</h4>
+                                    <p>Quick access to all government services and tools</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon">💾</span>
+                                <div>
+                                    <h4>Save Preferences</h4>
+                                    <p>Personalized dashboard with your frequently used services</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon">🔔</span>
+                                <div>
+                                    <h4>Stay Updated</h4>
+                                    <p>Get notifications about new services and updates</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon">📊</span>
+                                <div>
+                                    <h4>Track Progress</h4>
+                                    <p>Monitor your applications and service requests</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon">🛡️</span>
+                                <div>
+                                    <h4>Secure & Private</h4>
+                                    <p>Your data is protected with government-grade security</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="signup-stats">
+                            <div class="stat-item">
+                                <h4>50K+</h4>
+                                <p>Active Users</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>100+</h4>
+                                <p>Services Available</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>24/7</h4>
+                                <p>Support Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VERIFICATION INFO -->
+    <section class="auth-help">
+        <div class="container">
+            <div class="verification-info">
+                <h4>Account Verification Process</h4>
+                <div class="verification-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div>
+                            <h5>Email Verification</h5>
+                            <p>Verify your email address to activate your account</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div>
+                            <h5>Mobile Verification</h5>
+                            <p>Confirm your mobile number for secure access</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div>
+                            <h5>Profile Setup</h5>
+                            <p>Complete your profile to access all features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="https://img.icons8.com/color/20/domain.png" alt="Logo">
+                        </div>
+                        <span>Ek-Drishti</span>
+                    </div>
+                    <p>Your gateway to government tools and digital services</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Account</h5>
+                    <ul>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="signup.html">Create Account</a></li>
+                        <li><a href="#">Reset Password</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Security</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security Center</a></li>
+                        <li><a href="#">Data Protection</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ek-Drishti Digital Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            const toggle = input.parentElement.querySelector('.password-toggle');
+            const showIcon = toggle.querySelector('.show-icon');
+            const hideIcon = toggle.querySelector('.hide-icon');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                showIcon.style.display = 'none';
+                hideIcon.style.display = 'inline';
+            } else {
+                input.type = 'password';
+                showIcon.style.display = 'inline';
+                hideIcon.style.display = 'none';
+            }
+        }
+
+        // Password strength checker
+        function checkPasswordStrength(password) {
+            let strength = 0;
+            let feedback = '';
+
+            if (password.length >= 8) strength += 25;
+            if (/[a-z]/.test(password)) strength += 25;
+            if (/[A-Z]/.test(password)) strength += 25;
+            if (/[0-9]/.test(password)) strength += 25;
+            if (/[^A-Za-z0-9]/.test(password)) strength += 25;
+
+            if (strength <= 25) {
+                feedback = 'Weak';
+            } else if (strength <= 50) {
+                feedback = 'Fair';
+            } else if (strength <= 75) {
+                feedback = 'Good';
+            } else {
+                feedback = 'Strong';
+            }
+
+            return { strength: Math.min(strength, 100), feedback };
+        }
+
+        // Password strength indicator
+        document.getElementById('signupPassword').addEventListener('input', function() {
+            const password = this.value;
+            const strengthBar = document.getElementById('strengthFill');
+            const strengthText = document.getElementById('strengthText');
+            
+            if (password.length === 0) {
+                strengthBar.style.width = '0%';
+                strengthText.textContent = 'Enter password';
+                strengthBar.className = 'strength-fill';
+                return;
+            }
+
+            const result = checkPasswordStrength(password);
+            strengthBar.style.width = result.strength + '%';
+            strengthText.textContent = result.feedback;
+            
+            strengthBar.className = 'strength-fill';
+            if (result.strength <= 25) {
+                strengthBar.classList.add('weak');
+            } else if (result.strength <= 50) {
+                strengthBar.classList.add('fair');
+            } else if (result.strength <= 75) {
+                strengthBar.classList.add('good');
+            } else {
+                strengthBar.classList.add('strong');
+            }
+        });
+
+        // Handle signup form submission
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const password = formData.get('password');
+            const confirmPassword = formData.get('confirmPassword');
+            
+            // Password match validation
+            if (password !== confirmPassword) {
+                showNotification('Passwords do not match', 'error');
+                return;
+            }
+            
+            // Password strength validation
+            const strengthResult = checkPasswordStrength(password);
+            if (strengthResult.strength < 50) {
+                showNotification('Please choose a stronger password', 'error');
+                return;
+            }
+            
+            // Terms acceptance validation
+            if (!document.getElementById('terms').checked) {
+                showNotification('Please accept the Terms of Service and Privacy Policy', 'error');
+                return;
+            }
+            
+            // Simulate signup process
+            showNotification('Creating your account...', 'info');
+            
+            setTimeout(() => {
+                showNotification('Account created successfully! Please check your email for verification.', 'success');
+                setTimeout(() => {
+                    window.location.href = 'login.html';
+                }, 2000);
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
