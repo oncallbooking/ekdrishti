@@ -51,94 +51,55 @@
     </div>
   </header>
 
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ek Drishti — Sharp Corner Fade Banner</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Force sharp corners everywhere */
-    .sharp, .sharp * { border-radius: 0 !important; }
-
-    /* Fixed banner size: 1584×396. Remove max-width to keep exact size. */
-    .banner-wrap { width: 1584px; height: 396px; }
-
-    /* Fade logic */
-    .banner-slide { opacity: 0; transition: opacity 800ms ease-in-out; }
-    .banner-slide.active { opacity: 1; }
-
-    /* Make images fill perfectly without rounding */
-    .banner-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-    /* Optional: responsive mode — comment out .banner-wrap fixed size and
-       uncomment this block if you want it responsive full-width instead. */
-    /*
-    .banner-wrap { width: 100%; height: clamp(16rem, 26vw, 396px); }
-    */
-  </style>
-</head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-
-  <!-- Banner (Sharp corners, Fade every 2s) -->
-  <div class="relative overflow-hidden sharp banner-wrap" id="banner">
-    <div class="absolute inset-0" id="slider">
-      <div class="absolute inset-0 banner-slide active">
-        <img src="assets/banner1.jpg" alt="Banner 1" />
-      </div>
-      <div class="absolute inset-0 banner-slide">
-        <img src="assets/banner2.jpg" alt="Banner 2" />
-      </div>
-      <div class="absolute inset-0 banner-slide">
-        <img src="assets/banner3.jpg" alt="Banner 3" />
-      </div>
-      <!-- Add more slides by duplicating the block above and updating src. -->
-    </div>
-
-    <!-- Prev/Next (Sharp buttons) -->
-    <button type="button" id="prevBtn"
-      class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/50 text-white px-3 py-2 select-none"
-      aria-label="Previous">‹</button>
-
-    <button type="button" id="nextBtn"
-      class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/50 text-white px-3 py-2 select-none"
-      aria-label="Next">›</button>
+ <!-- Banner Fade Slider -->
+<div class="relative w-full overflow-hidden h-64 md:h-96">
+  <!-- Slides -->
+  <div class="relative w-full h-full" id="slider">
+    <img src="assets/banner1.jpg" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+    <img src="assets/banner2.jpg" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+    <img src="assets/banner3.jpg" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
   </div>
 
-  <script>
-    const slides = Array.from(document.querySelectorAll('.banner-slide'));
-    let index = 0;
-    let timer = null;
+  <!-- Prev Button -->
+  <button onclick="prevSlide()" 
+    class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full z-10">
+    ‹
+  </button>
+  
+  <!-- Next Button -->
+  <button onclick="nextSlide()" 
+    class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full z-10">
+    ›
+  </button>
+</div>
 
-    function showSlide(i) {
-      index = (i + slides.length) % slides.length;
-      slides.forEach((el, idx) => {
-        el.classList.toggle('active', idx === index);
-      });
-    }
+<script>
+  const slides = document.querySelectorAll("#slider img");
+  let index = 0;
 
-    function nextSlide() { showSlide(index + 1); }
-    function prevSlide() { showSlide(index - 1); }
+  function showSlide(i) {
+    slides.forEach((slide, idx) => {
+      slide.style.opacity = (idx === i) ? "1" : "0";
+    });
+    index = i;
+  }
 
-    // Auto-play every 2 seconds
-    function start() { timer = setInterval(nextSlide, 2000); }
-    function stop() { if (timer) clearInterval(timer); }
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
 
-    // Start autoplay
-    start();
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
 
-    // Wire buttons
-    document.getElementById('nextBtn').addEventListener('click', () => { stop(); nextSlide(); start(); });
-    document.getElementById('prevBtn').addEventListener('click', () => { stop(); prevSlide(); start(); });
+  // First slide show
+  showSlide(index);
 
-    // Pause on hover (optional)
-    const banner = document.getElementById('banner');
-    banner.addEventListener('mouseenter', stop);
-    banner.addEventListener('mouseleave', start);
-  </script>
-</body>
-</html>
+  // Auto-play every 2 seconds
+  setInterval(nextSlide, 2000);
+</script>
 
 
 
