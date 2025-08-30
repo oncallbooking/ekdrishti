@@ -1,451 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Ek-Drishti Digital Hub - Government Tools & Services 2025</title>
-    <meta name="description" content="Your one-stop digital hub for government tools, student portals, job opportunities, and essential web applications. Access eOffice, Railways, ICEGATE, and more.">
-    <meta name="keywords" content="government tools, student portals, job portals, digital services, eOffice, railways, ICEGATE, NIC tools">
-    <meta name="author" content="Ek-Drishti Digital Hub">
-    
-    <!-- OpenGraph Tags -->
-    <meta property="og:title" content="Ek-Drishti Digital Hub - Government Tools & Services">
-    <meta property="og:description" content="Access essential government services, student portals, and digital tools in one centralized platform.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ek-drishti-hub.github.io">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=630">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ek-Drishti Digital Hub">
-    <meta name="twitter:description" content="Your gateway to government tools and digital services">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="https://img.icons8.com/color/32/domain.png" type="image/png">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GovTools & WebApps 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!-- HEADER -->
-    <header class="header sticky-header" id="header">
-        <!-- Main Navigation -->
-        <div class="container">
-            <div class="nav-wrapper">
-                <!-- Logo + Brand -->
-                <div class="brand">
-                    <div class="logo">
-                        <img src="https://img.icons8.com/color/24/domain.png" alt="Logo">
-                    </div>
-                    <div class="brand-text">
-                        <h1>Ek-Drishti</h1>
-                        <p>Digital Hub</p>
-                    </div>
-                </div>
+<body class="bg-gray-100 text-gray-900">
 
-                <!-- Desktop Navigation Menu -->
-                <nav class="nav-menu">
-                    <a href="index.html" class="nav-link active">Home</a>
-                    <a href="services.html" class="nav-link">Services</a>
-                    <a href="tools.html" class="nav-link">Tools</a>
-                    <a href="blog.html" class="nav-link">Blog</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                    <a href="login.html" class="btn btn-primary">Login</a>
-                    
-                    <!-- Dark Mode Toggle -->
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <span class="sun-icon">☀️</span>
-                        <span class="moon-icon">🌙</span>
-                    </button>
-                </nav>
-
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div class="mobile-menu" id="mobileMenu">
-                <nav class="mobile-nav">
-                    <a href="index.html" class="mobile-nav-link">Home</a>
-                    <a href="services.html" class="mobile-nav-link">Services</a>
-                    <a href="tools.html" class="mobile-nav-link">Tools</a>
-                    <a href="blog.html" class="mobile-nav-link">Blog</a>
-                    <a href="contact.html" class="mobile-nav-link">Contact</a>
-                    <a href="login.html" class="btn btn-primary">Login</a>
-                </nav>
-            </div>
-        </div>
-
-        <!-- Breaking News Ticker -->
-        <div class="news-ticker-wrapper">
-            <div class="news-ticker">
-                ⚡ Breaking News: Latest Government Updates • NIC Tools Available • Student Job Portals Live • Tech Forums Active ⚡
-            </div>
-        </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">Government Tools & Services</h2>
-                <p class="hero-subtitle">Your centralized platform for accessing essential government services, student portals, and digital tools</p>
-                
-             <!-- App Launcher Section -->
-<section class="app-launcher" style="background:#111; padding:40px 20px; border-radius:20px; max-width:800px; margin:30px auto;">
-  <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:25px; justify-items:center;">
-
-    <!-- Example App Icon -->
-    <a href="https://eoffice.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/office.png" alt="eOffice">
+  <!-- HEADER -->
+  <header class="bg-blue-900 text-white shadow-lg">
+    <!-- Top Row: Logo + Title + Navigation -->
+    <div class="flex items-center justify-between px-4 py-3">
+      <!-- Logo + Site Name -->
+      <div class="flex items-center space-x-2">
+        <img src="https://img.icons8.com/color/48/000000/domain.png" alt="Logo" class="h-8 w-8" />
+        <h1 class="font-bold text-xl tracking-wide">Ek-Drishti Digital Hub</h1>
       </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">eOffice</p>
+
+      <!-- Navigation Tabs -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#" class="flex items-center space-x-1 hover:text-yellow-300">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/news.png" alt="News" />
+          <span>Blog</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-yellow-300">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/reading.png" alt="Blog" />
+          <span>News</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-yellow-300">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/privacy.png" alt="Privacy" />
+          <span>Privacy</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-yellow-300">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/document.png" alt="Terms" />
+          <span>Terms</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-yellow-300">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/contacts.png" alt="Contact" />
+          <span>Contact</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Breaking News Ticker -->
+    <div class="bg-black-800 text-yellow-300 text-sm px-4 py-1">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        ⚡ Breaking News: Govt Updates • NIC Tools • Student Jobs • Tech Forums Live Now ⚡
+      </marquee>
+    </div>
+  </header>
+
+  <!-- Banner Slider -->
+<div class="relative w-full overflow-hidden h-64 md:h-96">
+  <!-- Slides -->
+  <div class="flex transition-transform duration-700 ease-in-out" id="slider">
+    <img src="assets/banner1.jpg" class="w-full flex-shrink-0 object-cover" />
+    <img src="https://picsum.photos/id/1016/1200/400" class="w-full flex-shrink-0 object-cover" />
+    <img src="https://picsum.photos/id/1018/1200/400" class="w-full flex-shrink-0 object-cover" />
+  </div>
+
+  <!-- Prev Button -->
+  <button onclick="prevSlide()" 
+    class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full">
+    ‹
+  </button>
+  
+  <!-- Next Button -->
+  <button onclick="nextSlide()" 
+    class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full">
+    ›
+  </button>
+</div>
+
+<script>
+  const slider = document.getElementById("slider");
+  const slides = slider.children.length;
+  let index = 0;
+
+  function showSlide(i) {
+    index = (i + slides) % slides;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(index + 1);
+  }
+
+  function prevSlide() {
+    showSlide(index - 1);
+  }
+
+  // Auto-play every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
+
+
+ <!-- QUICK LOGIN PORTAL'S -->
+<section class="bg-white p-3 rounded shadow mx-5 mb-5">
+  <h2 class="font-bold mb-2">QUICK LOGIN PORTAL'S</h2>
+  <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
+
+    <a href="https://parichay.nic.in/" target="_blank" class="bg-blue-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/office.png" class="mb-2" />
+      <span>e-Office</span>
     </a>
 
-    <a href="https://indianrailways.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/train.png" alt="Railways">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">Railways</p>
+    <a href="https://ireps.gov.in/" target="_blank" class="bg-green-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/train.png" class="mb-2" />
+      <span>IREPS</span>
     </a>
 
-    <a href="https://www.icegate.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/container-truck.png" alt="ICEGATE">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">ICEGATE</p>
+    <a href="https://hrms.indianrail.gov.in/HRMS/login?timeout" target="_blank" class="bg-red-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/id-verified.png" class="mb-2" />
+      <span>HRMS</span>
     </a>
 
-    <a href="https://incometaxindia.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/tax.png" alt="Income Tax">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">Income Tax</p>
+    <a href="https://rdso.indianrailways.gov.in/" target="_blank" class="bg-purple-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/organization.png" class="mb-2" />
+      <span>RDSO</span>
     </a>
 
-    <a href="https://ncs.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/student-male.png" alt="Student Jobs">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">Jobs</p>
+    <a href="https://roams.cris.org.in/uaa/login" target="_blank" class="bg-yellow-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/lock-2.png" class="mb-2" />
+      <span>ROAMS</span>
     </a>
 
-    <a href="https://swayam.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/book.png" alt="Learning">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">Learning</p>
+    <a href="https://aims.indianrailways.gov.in/IPAS/LoginForms/Login.jsp" target="_blank" class="bg-pink-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/money.png" class="mb-2" />
+      <span>AIMS</span>
     </a>
 
-    <a href="https://ireps.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/purchase-order.png" alt="IREPS">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">IREPS</p>
-    </a>
+  </section>
+</section>
 
-    <a href="https://uvam.indianrailways.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/settings.png" alt="UVAM">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">UVAM</p>
-    </a>
+<!-- SOFTWARE BLOCKS -->
+<section class="bg-white p-3 rounded shadow mx-5 mb-5">
+  <h2 class="font-bold mb-2">Download DSC Signer Windows/Mac | Token Drivers | https://eoffsigner.eoffice.gov.in:55101/check/isLive"> ( DSC check link)</h2>
+  <section class="grid grid-cols-2 sm:grid-cols-8 gap-2 px-3 mb-3">
 
-    <a href="https://adg.indianrailways.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/conference.png" alt="ADG">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">ADG</p>
-    </a>
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://nr.indianrailways.gov.in/uploads/files/1726568314964-DigitalSignerService%204.1.8%20Windows%20Installer%20x64.zip')">
+      DSC Signer 4.1.8
+    </button>
 
-    <a href="https://sse.indianrailways.gov.in" target="_blank" style="text-decoration:none;">
-      <div style="background:#1f2937; width:70px; height:70px; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.2s ease-in-out;">
-        <img src="https://img.icons8.com/ios-filled/40/ffffff/user.png" alt="SSE">
-      </div>
-      <p style="text-align:center; margin-top:8px; font-size:12px; color:#f9fafb;">SSE</p>
-    </a>
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://nr.indianrailways.gov.in/uploads/files/1721386719899-DigitalSignerServicev4.1.7WindowsInstallerx64.zip','_blank')">
+      DSC Signer 4.1.7
+    </button>
 
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://info.spark.gov.in/wp-content/uploads/NICDSign1_9_8_MacOs.zip)">
+      DSC Signer Mac
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://info.spark.gov.in/wp-content/uploads/NICDSign1_9_8_Linux.zip)">
+      DSC Signer Ubuntu
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://www.ncodesolutions.com/drivers/CryptoID_Setup_new_V319.zip)">
+      AmToken
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://www.ncodesolutions.com/drivers/HyperPKI_HYP2003_Setup.zip)">
+      e-Pass 2003 (HYP2003)
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://www.ncodesolutions.com/drivers/WD_PROXKey_new.zip">
+      Watch Data (Proxkey)
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://www.ncodesolutions.com/drivers/InnaITDSC_Setup.zip)">
+      InnaIT
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass1000-Setup.zip)">
+      ePass1000 Setup
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-i386.zip)">
+      ePass2003 Linux i386
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-x64.zip">
+      ePass2003 Linux x64
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-MAC-iOS.rar">
+      ePass2003 MAC iOS
+    </button>
+
+  </section>
+</section>
+
+<!-- SOFTWARE BLOCKS -->
+<section class="bg-white p-3 rounded shadow mx-5 mb-5">
+  <h2 class="font-bold mb-2">Download JAVA Windows/Mac/Linex</h2>
+  <section class="grid grid-cols-2 sm:grid-cols-8 gap-2 px-3 mb-3">
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250126_d8aa705069af427f9b83e66b34f5e380')">
+      Windows JAVA 32 bit
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250129_d8aa705069af427f9b83e66b34f5e380)">
+      Windows JAVA 64 bit
+    </button>
+    
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250129_d8aa705069af427f9b83e66b34f5e380)">
+      Java Runtime Environment
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252313_68ce765258164726922591683c51982c#xd_co_f=MDcwYmI4NDItNDg3Ny00Mzg2LTgxMGMtNDBmY2Q0NmFiMmE3~')">
+      macOS JAVA ARM-64
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252312_68ce765258164726922591683c51982c#xd_co_f=MDcwYmI4NDItNDg3Ny00Mzg2LTgxMGMtNDBmY2Q0NmFiMmE3~')">
+      Linux JAVA x64
+    </button>
+
+    <button class="bg-gray-200 text-black p-2 rounded text-xs"
+      onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252318_68ce765258164726922591683c51982c#xd_co_f=MDcwYmI4NDItNDg3Ny00Mzg2LTgxMGMtNDBmY2Q0NmFiMmE3~')">
+      Solaris JAVA x64 
+    </button>
+
+  </section>
+</section>
+
+
+  <!-- SOFTWARE BLOCKS -->
+    <section class="bg-white p-3 rounded shadow mx-5 mb-5">
+    <h2 class="font-bold mb-2">SOFTWARE BLOCKS</h2>
+  <section class="grid grid-cols-2 sm:grid-cols-8 gap-2 px-3 mb-3">
+    <div class="bg-white p-3 shadow rounded">DSC Signer 4.1.8</div>
+    <div class="bg-white p-3 shadow rounded">Java Runtime 32/64</div>
+    <div class="bg-white p-3 shadow rounded">AnyDesk Remote</div>
+    <div class="bg-white p-3 shadow rounded">Google Hindi Input</div>
+    <div class="bg-white p-3 shadow rounded">NIC DSC Utility</div>
+    <div class="bg-white p-3 shadow rounded">ICEGATE Signer</div>
+    <div class="bg-white p-3 shadow rounded">PDF24 Toolkit</div>
+    <div class="bg-white p-3 shadow rounded">ILovePDF</div>
+    <div class="bg-white p-3 shadow rounded">RemoveBG</div>
+    <div class="bg-white p-3 shadow rounded">TinyPNG</div>
+    <div class="bg-white p-3 shadow rounded">Typing.com</div>
+    <div class="bg-white p-3 shadow rounded">Grammarly</div>
+    <div class="bg-white p-3 shadow rounded">QuillBot</div>
+    <div class="bg-white p-3 shadow rounded">Trello</div>
+    <div class="bg-white p-3 shadow rounded">Notion</div>
+    <div class="bg-white p-3 shadow rounded">ChatGPT</div>
+  </section>
+
+<!-- WEBAPP TOOLS 2025 -->
+<section class="bg-white p-3 rounded shadow mx-3 mb-5">
+  <h2 class="font-bold mb-2">WebApp Tools 2025</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-1 text-xs">
+    
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://www.ilovepdf.com/', '_blank')">ILovePDF</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://smallpdf.com/', '_blank')">SmallPDF</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://tools.pdf24.org/', '_blank')">PDF24 Tools</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://www.adobe.com/acrobat/online/convert-pdf.html', '_blank')">Adobe PDF Tools</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://www.iloveimg.com/', '_blank')">ILoveIMG</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://tinypng.com/', '_blank')">TinyPNG</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://imageresizer.com/', '_blank')">Image Resizer</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://www.remove.bg/', '_blank')">RemoveBG</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://www.canva.com/', '_blank')">Canva</button>
+      
+    <button class="bg-gray-200 text-black p-1 rounded"
+      onclick="window.open('https://www.grammarly.com/', '_blank')">Grammarly</button>
+
+    
+      
+    <!-- Add up to 50 buttons here in same style -->
   </div>
 </section>
 
 
-            </div>
+  <!-- CORE SERVICES SLIDER -->
+  <h2 class="text-center text-lg font-bold text-gray-800">Core Services</h2>
+  <div class="slider-container max-w-6xl mx-auto my-6 relative overflow-hidden">
+    <button class="slider-btn prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-purple-700 text-white w-10 h-10 rounded-full z-10">&#10094;</button>
+    <div class="slider-track flex transition-transform duration-500 ease-in-out">
+      <div class="slide min-w-[25%] p-4">
+        <div class="card bg-white rounded-lg shadow p-4 text-center">
+          <img src="https://img.icons8.com/ios-filled/100/4B0082/control-panel.png" alt="">
+          <h3 class="mt-2 font-medium">Command & Control Centre</h3>
         </div>
-    </section>
-
-    <!-- SOFTWARE TOOLS SECTION -->
-    <section class="software-tools" id="tools">
-        <div class="container">
-            <h3 class="section-title">Essential Software Tools</h3>
-            
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <div class="tool-icon blue">
-                        <img src="https://img.icons8.com/ios-filled/24/ffffff/pdf.png" alt="DSC Signer">
-                    </div>
-                    <p>DSC Signer 4.1.8</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon green">
-                        <img src="https://img.icons8.com/ios-filled/24/ffffff/java-coffee-cup-logo.png" alt="Java Runtime">
-                    </div>
-                    <p>Java Runtime</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon red">
-                        <img src="https://img.icons8.com/ios-filled/24/ffffff/remote-desktop.png" alt="AnyDesk">
-                    </div>
-                    <p>AnyDesk Remote</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon yellow">
-                        <img src="https://img.icons8.com/ios-filled/24/ffffff/language.png" alt="Hindi Input">
-                    </div>
-                    <p>Hindi Input</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon purple">
-                        <img src="https://img.icons8.com/ios-filled/24/ffffff/security-checked.png" alt="NIC DSC">
-                    </div>
-                    <p>NIC DSC Utility</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon teal">
-                        <img src="https://img.icons8.com/ios-filled/24/ffffff/edit-image.png" alt="Image Tools">
-                    </div>
-                    <p>Image Tools</p>
-                </div>
-            </div>
+      </div>
+      <div class="slide min-w-[25%] p-4">
+        <div class="card bg-white rounded-lg shadow p-4 text-center">
+          <img src="https://img.icons8.com/ios-filled/100/4B0082/worldwide-location.png" alt="">
+          <h3 class="mt-2 font-medium">Remote Sensing & GIS</h3>
         </div>
-    </section>
-
-    <!-- CORE SERVICES SLIDER -->
-    <section class="core-services" id="services">
-        <div class="container">
-            <h3 class="section-title">Core Services</h3>
-            
-            <div class="slider-container">
-                <!-- Slider Navigation -->
-                <button class="slider-btn prev" id="prevBtn">‹</button>
-                <button class="slider-btn next" id="nextBtn">›</button>
-
-                <!-- Slider Track -->
-                <div class="slider-wrapper">
-                    <div class="slider-track" id="sliderTrack">
-                        <div class="slide">
-                            <div class="service-card">
-                                <div class="service-icon blue">
-                                    <img src="https://img.icons8.com/ios-filled/40/ffffff/control-panel.png" alt="Command Control">
-                                </div>
-                                <h4>Command & Control Centre</h4>
-                                <p>Centralized monitoring and management platform for government operations</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="service-card">
-                                <div class="service-icon green">
-                                    <img src="https://img.icons8.com/ios-filled/40/ffffff/worldwide-location.png" alt="Remote Sensing">
-                                </div>
-                                <h4>Remote Sensing & GIS</h4>
-                                <p>Advanced geospatial analysis and mapping solutions for smart governance</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="service-card">
-                                <div class="service-icon red">
-                                    <img src="https://img.icons8.com/ios-filled/40/ffffff/chat-message.png" alt="Sandes">
-                                </div>
-                                <h4>Sandes</h4>
-                                <p>Secure messaging platform for government communication and collaboration</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="service-card">
-                                <div class="service-icon yellow">
-                                    <img src="https://img.icons8.com/ios-filled/40/ffffff/knowledge-sharing.png" alt="Knowledge Network">
-                                </div>
-                                <h4>Knowledge Network</h4>
-                                <p>Collaborative platform for sharing knowledge and best practices</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="service-card">
-                                <div class="service-icon purple">
-                                    <img src="https://img.icons8.com/ios-filled/40/ffffff/india.png" alt="Digital India">
-                                </div>
-                                <h4>Digital India Portal</h4>
-                                <p>Gateway to digital services and initiatives across India</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="service-card">
-                                <div class="service-icon teal">
-                                    <img src="https://img.icons8.com/ios-filled/40/ffffff/government.png" alt="e-Governance">
-                                </div>
-                                <h4>e-Governance Suite</h4>
-                                <p>Comprehensive digital governance solutions for public administration</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slider Indicators -->
-                <div class="slider-indicators" id="sliderIndicators">
-                    <button class="indicator active" data-slide="0"></button>
-                    <button class="indicator" data-slide="1"></button>
-                    <button class="indicator" data-slide="2"></button>
-                    <button class="indicator" data-slide="3"></button>
-                    <button class="indicator" data-slide="4"></button>
-                    <button class="indicator" data-slide="5"></button>
-                </div>
-            </div>
+      </div>
+      <div class="slide min-w-[25%] p-4">
+        <div class="card bg-white rounded-lg shadow p-4 text-center">
+          <img src="https://img.icons8.com/ios-filled/100/4B0082/chat-message.png" alt="">
+          <h3 class="mt-2 font-medium">Sandes</h3>
         </div>
-    </section>
-
-    <!-- SERVICE CATEGORIES -->
-    <section class="service-categories">
-        <div class="container">
-            <h3 class="section-title">Service Categories</h3>
-            
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-header">
-                        <div class="category-icon blue">
-                            <img src="https://img.icons8.com/ios-filled/24/ffffff/student-male.png" alt="Student Jobs">
-                        </div>
-                        <h4>Student & Job Portals</h4>
-                    </div>
-                    <ul class="category-list">
-                        <li><span class="dot blue"></span>SSC / UPSC Official</li>
-                        <li><span class="dot blue"></span>NCS Govt Jobs</li>
-                        <li><span class="dot blue"></span>Scholarship Portals</li>
-                        <li><span class="dot blue"></span>Railway Recruitment</li>
-                    </ul>
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-header">
-                        <div class="category-icon green">
-                            <img src="https://img.icons8.com/ios-filled/24/ffffff/book.png" alt="Learning">
-                        </div>
-                        <h4>Learning & Training</h4>
-                    </div>
-                    <ul class="category-list">
-                        <li><span class="dot green"></span>SWAYAM Platform</li>
-                        <li><span class="dot green"></span>DIKSHA App</li>
-                        <li><span class="dot green"></span>Coursera Govt Courses</li>
-                        <li><span class="dot green"></span>Skill India Portal</li>
-                    </ul>
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-header">
-                        <div class="category-icon yellow">
-                            <img src="https://img.icons8.com/ios-filled/24/ffffff/government.png" alt="Government">
-                        </div>
-                        <h4>Government Services</h4>
-                    </div>
-                    <ul class="category-list">
-                        <li><span class="dot yellow"></span>Aadhaar & PAN Services</li>
-                        <li><span class="dot yellow"></span>Passport Seva</li>
-                        <li><span class="dot yellow"></span>Voter ID Services</li>
-                        <li><span class="dot yellow"></span>RTI Filing Portal</li>
-                    </ul>
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-header">
-                        <div class="category-icon purple">
-                            <img src="https://img.icons8.com/ios-filled/24/ffffff/technology.png" alt="Tech Tools">
-                        </div>
-                        <h4>Tech & Digital Tools</h4>
-                    </div>
-                    <ul class="category-list">
-                        <li><span class="dot purple"></span>DigiLocker</li>
-                        <li><span class="dot purple"></span>UMANG Portal</li>
-                        <li><span class="dot purple"></span>BHIM UPI Services</li>
-                        <li><span class="dot purple"></span>GeM Portal</li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+      <div class="slide min-w-[25%] p-4">
+        <div class="card bg-white rounded-lg shadow p-4 text-center">
+          <img src="https://img.icons8.com/ios-filled/100/4B0082/knowledge-sharing.png" alt="">
+          <h3 class="mt-2 font-medium">National Knowledge Network</h3>
         </div>
-    </section>
+      </div>
+    </div>
+    <button class="slider-btn next absolute right-2 top-1/2 transform -translate-y-1/2 bg-purple-700 text-white w-10 h-10 rounded-full z-10">&#10095;</button>
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- Brand -->
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <div class="footer-logo">
-                            <img src="https://img.icons8.com/color/20/domain.png" alt="Logo">
-                        </div>
-                        <span>Ek-Drishti</span>
-                    </div>
-                    <p>Your gateway to government tools and digital services</p>
-                </div>
+  <div class="container mx-auto">
+  <h3 class="text-3xl font-bold text-center mb-12">Service Categories</h3>
 
-                <!-- Quick Links -->
-                <div class="footer-section">
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="tools.html">Tools</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div class="footer-section">
-                    <h5>Services</h5>
-                    <ul>
-                        <li><a href="#">eOffice</a></li>
-                        <li><a href="#">Student Portals</a></li>
-                        <li><a href="#">Job Portals</a></li>
-                        <li><a href="#">Digital Tools</a></li>
-                    </ul>
-                </div>
-
-                <!-- Support -->
-                <div class="footer-section">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="mailto:brainimmensity@gmail.com">Email Support</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Ek-Drishti Digital Hub. All rights reserved.</p>
-            </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    
+    <!-- Student & Job Portals -->
+    <div class="glass-effect p-6 rounded-xl hover:bg-gray-100 transition-colors group">
+      <div class="flex items-center mb-4">
+        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mr-3">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/student-male.png" alt="Student & Job Portals">
         </div>
-    </footer>
-
-    <!-- WhatsApp Floating Button -->
-    <div class="whatsapp-float">
-        <a href="https://wa.me/918090441419?text=Hi%20Team,%20I%20have%20a%20query" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/ios-filled/32/ffffff/whatsapp.png" alt="WhatsApp">
-        </a>
+        <h4 class="text-lg font-semibold">Student & Job Portals</h4>
+      </div>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>SSC / UPSC Official</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>NCS Govt Jobs</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Scholarship Portals</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Railway Recruitment</li>
+      </ul>
     </div>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <!-- Learning & Training -->
+    <div class="glass-effect p-6 rounded-xl hover:bg-gray-100 transition-colors group">
+      <div class="flex items-center mb-4">
+        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/book.png" alt="Learning & Training">
+        </div>
+        <h4 class="text-lg font-semibold">Learning & Training</h4>
+      </div>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>SWAYAM Platform</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>DIKSHA App</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Coursera Govt Courses</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Skill India Portal</li>
+      </ul>
+    </div>
+     <!-- Student & Job Portals -->
+    <div class="glass-effect p-6 rounded-xl hover:bg-gray-100 transition-colors group">
+      <div class="flex items-center mb-4">
+        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mr-3">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/student-male.png" alt="Student & Job Portals">
+        </div>
+        <h4 class="text-lg font-semibold">Student & Job Portals</h4>
+      </div>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>SSC / UPSC Official</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>NCS Govt Jobs</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Scholarship Portals</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Railway Recruitment</li>
+      </ul>
+    </div>
+
+    <!-- Learning & Training -->
+    <div class="glass-effect p-6 rounded-xl hover:bg-gray-100 transition-colors group">
+      <div class="flex items-center mb-4">
+        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/book.png" alt="Learning & Training">
+        </div>
+        <h4 class="text-lg font-semibold">Learning & Training</h4>
+      </div>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>SWAYAM Platform</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>DIKSHA App</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Coursera Govt Courses</li>
+        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Skill India Portal</li>
+      </ul>
+    </div>
+
+   <section id="contact" class="py-16 px-4 bg-secondary">
+  <div class="container mx-auto">
+    
+    <!-- Heading -->
+    <h3 class="text-3xl font-bold text-center mb-12">Get In Touch</h3>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      
+      <!-- Contact Information -->
+      <div class="space-y-6">
+        <h4 class="text-2xl font-semibold mb-6">Contact Information</h4>
+
+        <!-- Email -->
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/mail.png" alt="Email">
+          </div>
+          <div>
+            <p class="font-medium">Email</p>
+            <p class="text-secondary-foreground">brainimmensity@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp">
+          </div>
+          <div>
+            <p class="font-medium">WhatsApp</p>
+            <p class="text-secondary-foreground">+91 80904 41419</p>
+          </div>
+        </div>
+
+        <!-- Office -->
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/marker.png" alt="Location">
+          </div>
+          <div>
+            <p class="font-medium">Office</p>
+            <p class="text-secondary-foreground">Digital India Hub, New Delhi</p>
+          </div>
+        </div>
+      </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white p-2 text-center text-xs">
+    © 2025 Ek-Drishti Digital Hub | Community Forum & Govt Tools
+  </footer>
+
+  <script>
+    const track = document.querySelector('.slider-track');
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let index = 0;
+
+    function updateSlider() {
+      const width = slides[0].clientWidth;
+      track.style.transform = `translateX(${-index * width}px)`;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % slides.length;
+      updateSlider();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + slides.length) % slides.length;
+      updateSlider();
+    }
+
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+    window.addEventListener("resize", updateSlider);
+
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000);
+  </script>
+
 </body>
 </html>
