@@ -140,6 +140,85 @@
 
     </div>
   </section>
+
+
+  <!-- DOWNLOAD DSC & SLIDER SECTION -->
+<section class="bg-slate-800 p-5 rounded shadow mx-5 mb-5">
+  <!-- HEADING -->
+  <h2 class="font-bold mb-4 text-slate-100 text-lg">
+    #2/ Download DSC Signer (Windows/Mac/Linux) & Token Drivers 
+    <a class="text-sky-400 underline" href="https://eoffsigner.eoffice.gov.in:55101/check/isLive" target="_blank">(DSC Check Link)</a>
+  </h2>
+
+  <!-- GRID LAYOUT -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- LEFT BOX (DOWNLOAD BUTTONS) -->
+    <div class="bg-slate-700 p-4 rounded shadow">
+      <h3 class="text-white font-semibold mb-3">Download Links</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2">
+        
+        <!-- Example Buttons -->
+        <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" 
+          onclick="window.open('https://nr.indianrailways.gov.in/uploads/files/1726568314964-DigitalSignerService%204.1.8%20Windows%20Installer%20x64.zip','_blank')">
+          DSC Signer 4.1.8
+        </button>
+
+        <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" 
+          onclick="window.open('https://nr.indianrailways.gov.in/uploads/files/1721386719899-DigitalSignerServicev4.1.7WindowsInstallerx64.zip','_blank')">
+          DSC Signer 4.1.7
+        </button>
+
+        <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" 
+          onclick="window.open('https://info.spark.gov.in/wp-content/uploads/NICDSign1_9_8_MacOs.zip','_blank')">
+          DSC Signer Mac
+        </button>
+
+        <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" 
+          onclick="window.open('https://www.safenetidprotect.com/drivers/linux.zip','_blank')">
+          Token Driver Linux
+        </button>
+
+        <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" 
+          onclick="window.open('https://www.safenetidprotect.com/drivers/windows.zip','_blank')">
+          Token Driver Windows
+        </button>
+
+        <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" 
+          onclick="window.open('https://www.safenetidprotect.com/drivers/macos.zip','_blank')">
+          Token Driver Mac
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT BOX (IMAGE SLIDER) -->
+    <div class="bg-slate-700 p-4 rounded shadow flex justify-center items-center">
+      <div class="relative w-64 h-64 overflow-hidden rounded shadow">
+        <img src="https://via.placeholder.com/250?text=Image+1" 
+             class="absolute w-full h-full object-cover slider-img opacity-100 transition-opacity duration-700">
+        <img src="https://via.placeholder.com/250?text=Image+2" 
+             class="absolute w-full h-full object-cover slider-img opacity-0 transition-opacity duration-700">
+        <img src="https://via.placeholder.com/250?text=Image+3" 
+             class="absolute w-full h-full object-cover slider-img opacity-0 transition-opacity duration-700">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SLIDER SCRIPT -->
+<script>
+  let current = 0;
+  const images = document.querySelectorAll('.slider-img');
+  setInterval(() => {
+    images[current].classList.add('opacity-0');
+    images[current].classList.remove('opacity-100');
+    current = (current + 1) % images.length;
+    images[current].classList.add('opacity-100');
+    images[current].classList.remove('opacity-0');
+  }, 3000);
+</script>
+
   
 <section class="bg-slate-800 p-3 rounded shadow mx-5 mb-5">
   <h2 class="font-bold mb-2 text-slate-100">
