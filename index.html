@@ -6,7 +6,6 @@
   <title>Ek-Drishti Digital Hub — GovTools & WebApps 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Simple CSS ticker to replace deprecated <marquee> */
     .ticker {
       white-space: nowrap;
       overflow: hidden;
@@ -23,203 +22,171 @@
     }
   </style>
 </head>
-<body class="bg-neutral-900 text-gray-100">
+<body class="bg-slate-900 text-slate-100">
   <!-- HEADER -->
-  <header class="bg-blue-800 text-white shadow-lg sticky top-0 z-50">
+  <header class="bg-blue-800 text-white shadow-lg">
     <div class="flex items-center justify-between px-4 py-3">
-      
-      <!-- Logo + Site Name -->
       <div class="flex items-center space-x-2">
-        <a href="index.html" class="flex items-center space-x-2">
-          <img src="https://img.icons8.com/color/48/000000/domain.png" alt="Ek-Drishti Logo" class="h-8 w-8" />
-          <h1 class="font-bold text-xl tracking-wide">Ek-Drishti Digital Hub</h1>
-        </a>
+        <img src="https://img.icons8.com/color/48/000000/domain.png" alt="Ek-Drishti logo" class="h-8 w-8" />
+        <h1 class="font-bold text-xl tracking-wide">Ek-Drishti Digital Hub</h1>
       </div>
-
-<!-- Navigation Tabs -->
-<nav class="hidden md:flex space-x-6 text-sm font-medium">
-  <a href="blog.html" class="flex items-center space-x-1 hover:text-yellow-300" aria-label="Blog">
-    <img src="https://img.icons8.com/ios-filled/20/ffffff/reading.png" alt="Blog icon" />
-    <span>Blog</span>
-  </a>
-  <a href="news.html" class="flex items-center space-x-1 hover:text-yellow-300" aria-label="News">
-    <img src="https://img.icons8.com/ios-filled/20/ffffff/news.png" alt="News icon" />
-    <span>News</span>
-  </a>
-  <a href="privacy.html" class="flex items-center space-x-1 hover:text-yellow-300" aria-label="Privacy">
-    <img src="https://img.icons8.com/ios-filled/20/ffffff/privacy.png" alt="Privacy icon" />
-    <span>Privacy</span>
-  </a>
-  <a href="terms.html" class="flex items-center space-x-1 hover:text-yellow-300" aria-label="Terms">
-    <img src="https://img.icons8.com/ios-filled/20/ffffff/document.png" alt="Terms icon" />
-    <span>Terms</span>
-  </a>
-  <a href="contact.html" class="flex items-center space-x-1 hover:text-yellow-300" aria-label="Contact">
-    <img src="https://img.icons8.com/ios-filled/20/ffffff/contacts.png" alt="Contact icon" />
-    <span>Contact</span>
-  </a>
-</nav>
-
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#" class="flex items-center space-x-1 hover:text-sky-400" aria-label="Blog">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/reading.png" alt="Blog icon" />
+          <span>Blog</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-sky-400" aria-label="News">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/news.png" alt="News icon" />
+          <span>News</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-sky-400" aria-label="Privacy">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/privacy.png" alt="Privacy icon" />
+          <span>Privacy</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 hover:text-sky-400" aria-label="Terms">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/document.png" alt="Terms icon" />
+          <span>Terms</span>
+        </a>
+        <a href="#contact" class="flex items-center space-x-1 hover:text-sky-400" aria-label="Contact">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/contacts.png" alt="Contact icon" />
+          <span>Contact</span>
+        </a>
+      </nav>
     </div>
   </header>
 
   <!-- Banner Fade Slider -->
   <section class="relative w-full overflow-hidden h-64 md:h-96">
-    <!-- Slides -->
     <div class="relative w-full h-full" id="hero-slider">
-      <img src="assets/banner1.jpg" alt="Digital services banner 1" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
-      <img src="assets/banner2.jpg" alt="Digital services banner 2" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
-      <img src="assets/banner3.jpg" alt="Digital services banner 3" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+      <img src="assets/banner1.jpg" alt="Banner 1" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+      <img src="assets/banner2.jpg" alt="Banner 2" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+      <img src="assets/banner3.jpg" alt="Banner 3" class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
     </div>
-
-    <!-- Prev Button -->
-    <button type="button" id="hero-prev"
-      class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full z-10"
-      aria-label="Previous slide">‹</button>
-    
-    <!-- Next Button -->
-    <button type="button" id="hero-next"
-      class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full z-10"
-      aria-label="Next slide">›</button>
+    <button type="button" id="hero-prev" class="absolute top-1/2 left-3 -translate-y-1/2 bg-slate-800 text-white px-3 py-2 rounded-full z-10">‹</button>
+    <button type="button" id="hero-next" class="absolute top-1/2 right-3 -translate-y-1/2 bg-slate-800 text-white px-3 py-2 rounded-full z-10">›</button>
   </section>
 
-  <!-- Ticker (replaces marquee) -->
-  <div class="bg-black text-gray-300 text-base md:text-lg font-bold px-6 py-3 tracking-wide shadow-md">
-    <div class="ticker" role="region" aria-label="Important notice ticker">
+  <!-- Ticker -->
+  <div class="bg-slate-800 text-slate-100 text-base md:text-lg font-bold px-6 py-3 tracking-wide shadow-md">
+    <div class="ticker">
       <div class="ticker__track">
-        ⚡ 📢 IMPORTANT NOTICE: This website is a One-Stop Digital Desk for all Government Employees, PSU Staff, and Students preparing for competitive exams. Here you will find Government Login Portals, Official Software (DSC Signer, Java 8, Token Drivers) and useful daily tools (Image Resizer, PDF Editor, PPT Maker, File Reducer). You can also track Train PNR Status, Bus & Flight Status, Exam Results & Admit Cards, Court Case Status, Land Records / Plot Search, Lost & Found Services and more. 👉 Bookmark this site! ⚡
+        ⚡ 📢 IMPORTANT NOTICE: One-Stop Digital Desk for Government Employees, PSU Staff & Students. 👉 Bookmark this site! ⚡
       </div>
     </div>
   </div>
 
-  <!-- QUICK LOGIN PORTALS -->
-  <section class="bg-white p-3 rounded shadow mx-5 my-5">
-    <h2 class="font-bold mb-2">Quick Login Portals</h2>
+  <!-- Quick Login -->
+  <section class="bg-slate-800 p-3 rounded shadow mx-5 my-5">
+    <h2 class="font-bold mb-2 text-slate-100">Quick Login Portals</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
-
-      <a href="https://parichay.nic.in/" target="_blank" rel="noopener" class="bg-blue-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <a href="https://parichay.nic.in/" target="_blank" class="bg-blue-700 hover:bg-blue-600 text-white p-2 text-xs rounded flex flex-col items-center">
         <img src="https://img.icons8.com/ios-filled/30/ffffff/office.png" class="mb-2" alt="e-Office" />
         <span>e-Office</span>
       </a>
-
-      <a href="https://ireps.gov.in/" target="_blank" rel="noopener" class="bg-green-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <a href="https://ireps.gov.in/" target="_blank" class="bg-sky-600 hover:bg-sky-500 text-white p-2 text-xs rounded flex flex-col items-center">
         <img src="https://img.icons8.com/ios-filled/30/ffffff/train.png" class="mb-2" alt="IREPS" />
         <span>IREPS</span>
       </a>
-
-      <a href="https://hrms.indianrail.gov.in/HRMS/login?timeout" target="_blank" rel="noopener" class="bg-red-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <a href="https://hrms.indianrail.gov.in/HRMS/login?timeout" target="_blank" class="bg-blue-800 hover:bg-blue-700 text-white p-2 text-xs rounded flex flex-col items-center">
         <img src="https://img.icons8.com/ios-filled/30/ffffff/id-verified.png" class="mb-2" alt="HRMS" />
         <span>HRMS</span>
       </a>
-
-      <a href="https://rdso.indianrailways.gov.in/" target="_blank" rel="noopener" class="bg-purple-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <a href="https://rdso.indianrailways.gov.in/" target="_blank" class="bg-sky-700 hover:bg-sky-600 text-white p-2 text-xs rounded flex flex-col items-center">
         <img src="https://img.icons8.com/ios-filled/30/ffffff/organization.png" class="mb-2" alt="RDSO" />
         <span>RDSO</span>
       </a>
-
-      <a href="https://roams.cris.org.in/uaa/login" target="_blank" rel="noopener" class="bg-yellow-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <a href="https://roams.cris.org.in/uaa/login" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white p-2 text-xs rounded flex flex-col items-center">
         <img src="https://img.icons8.com/ios-filled/30/ffffff/lock-2.png" class="mb-2" alt="ROAMS" />
         <span>ROAMS</span>
       </a>
-
-      <a href="https://aims.indianrailways.gov.in/IPAS/LoginForms/Login.jsp" target="_blank" rel="noopener" class="bg-pink-600 text-white p-2 text-xs rounded flex flex-col items-center">
+      <a href="https://aims.indianrailways.gov.in/IPAS/LoginForms/Login.jsp" target="_blank" class="bg-sky-800 hover:bg-sky-700 text-white p-2 text-xs rounded flex flex-col items-center">
         <img src="https://img.icons8.com/ios-filled/30/ffffff/money.png" class="mb-2" alt="AIMS" />
         <span>AIMS</span>
       </a>
-
     </div>
   </section>
 
   <!-- SOFTWARE: DSC & Token Drivers -->
-  <section class="bg-white p-3 rounded shadow mx-5 mb-5">
-    <h2 class="font-bold mb-2">Download DSC Signer (Windows/Mac/Linux) & Token Drivers
-      <a class="text-blue-700 underline" href="https://eoffsigner.eoffice.gov.in:55101/check/isLive" target="_blank" rel="noopener">(DSC Check Link)</a>
+  <section class="bg-slate-800 p-3 rounded shadow mx-5 mb-5">
+    <h2 class="font-bold mb-2 text-slate-100">Download DSC Signer (Windows/Mac/Linux) & Token Drivers
+      <a class="text-sky-400 underline" href="https://eoffsigner.eoffice.gov.in:55101/check/isLive" target="_blank" rel="noopener">(DSC Check Link)</a>
     </h2>
 
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 px-3 mb-3">
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://nr.indianrailways.gov.in/uploads/files/1726568314964-DigitalSignerService%204.1.8%20Windows%20Installer%20x64.zip','_blank')">DSC Signer 4.1.8</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://nr.indianrailways.gov.in/uploads/files/1726568314964-DigitalSignerService%204.1.8%20Windows%20Installer%20x64.zip','_blank')">DSC Signer 4.1.8</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://nr.indianrailways.gov.in/uploads/files/1721386719899-DigitalSignerServicev4.1.7WindowsInstallerx64.zip','_blank')">DSC Signer 4.1.7</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://nr.indianrailways.gov.in/uploads/files/1721386719899-DigitalSignerServicev4.1.7WindowsInstallerx64.zip','_blank')">DSC Signer 4.1.7</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://info.spark.gov.in/wp-content/uploads/NICDSign1_9_8_MacOs.zip','_blank')">DSC Signer Mac</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://info.spark.gov.in/wp-content/uploads/NICDSign1_9_8_MacOs.zip','_blank')">DSC Signer Mac</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://info.spark.gov.in/wp-content/uploads/NICDSign1_9_8_Linux.zip','_blank')">DSC Signer Ubuntu</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://info.spark.gov.in/wp-content/uploads/NICDSign1_9_8_Linux.zip','_blank')">DSC Signer Ubuntu</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://www.ncodesolutions.com/drivers/CryptoID_Setup_new_V319.zip','_blank')">AmToken</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://www.ncodesolutions.com/drivers/CryptoID_Setup_new_V319.zip','_blank')">AmToken</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://www.ncodesolutions.com/drivers/HyperPKI_HYP2003_Setup.zip','_blank')">e-Pass 2003 (HYP2003)</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://www.ncodesolutions.com/drivers/HyperPKI_HYP2003_Setup.zip','_blank')">e-Pass 2003 (HYP2003)</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://www.ncodesolutions.com/drivers/WD_PROXKey_new.zip','_blank')">Watch Data (Proxkey)</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://www.ncodesolutions.com/drivers/WD_PROXKey_new.zip','_blank')">Watch Data (Proxkey)</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://www.ncodesolutions.com/drivers/InnaITDSC_Setup.zip','_blank')">InnaIT</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://www.ncodesolutions.com/drivers/InnaITDSC_Setup.zip','_blank')">InnaIT</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass1000-Setup.zip','_blank')">ePass1000 Setup</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass1000-Setup.zip','_blank')">ePass1000 Setup</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-i386.zip','_blank')">ePass2003 Linux i386</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-i386.zip','_blank')">ePass2003 Linux i386</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-x64.zip','_blank')">ePass2003 Linux x64</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-x64.zip','_blank')">ePass2003 Linux x64</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-MAC-iOS.rar','_blank')">ePass2003 MAC iOS</button>
+      <button class="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded text-xs" onclick="window.open('https://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-MAC-iOS.rar','_blank')">ePass2003 MAC iOS</button>
     </div>
   </section>
 
   <!-- SOFTWARE: JAVA -->
-  <section class="bg-white p-3 rounded shadow mx-5 mb-5">
-    <h2 class="font-bold mb-2">Download Java (Windows / macOS / Linux)</h2>
+  <section class="bg-slate-800 p-3 rounded shadow mx-5 mb-5">
+    <h2 class="font-bold mb-2 text-slate-100">Download Java (Windows / macOS / Linux)</h2>
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 px-3 mb-3">
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250126_d8aa705069af427f9b83e66b34f5e380','_blank')">Windows Java 32-bit</button>
+      <button class="bg-sky-600 hover:bg-sky-500 text-white p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250126_d8aa705069af427f9b83e66b34f5e380','_blank')">Windows Java 32-bit</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250129_d8aa705069af427f9b83e66b34f5e380','_blank')">Windows Java 64-bit</button>
+      <button class="bg-sky-600 hover:bg-sky-500 text-white p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250129_d8aa705069af427f9b83e66b34f5e380','_blank')">Windows Java 64-bit</button>
       
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250129_d8aa705069af427f9b83e66b34f5e380','_blank')">Java Runtime Environment</button>
+      <button class="bg-sky-600 hover:bg-sky-500 text-white p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250129_d8aa705069af427f9b83e66b34f5e380','_blank')">Java Runtime Environment</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252313_68ce765258164726922591683c51982c','_blank')">macOS Java ARM-64</button>
+      <button class="bg-sky-600 hover:bg-sky-500 text-white p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252313_68ce765258164726922591683c51982c','_blank')">macOS Java ARM-64</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252312_68ce765258164726922591683c51982c','_blank')">Linux Java x64</button>
+      <button class="bg-sky-600 hover:bg-sky-500 text-white p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252312_68ce765258164726922591683c51982c','_blank')">Linux Java x64</button>
 
-      <button class="bg-gray-200 text-black p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252318_68ce765258164726922591683c51982c','_blank')">Solaris Java x64</button>
+      <button class="bg-sky-600 hover:bg-sky-500 text-white p-2 rounded text-xs" onclick="window.open('https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252318_68ce765258164726922591683c51982c','_blank')">Solaris Java x64</button>
     </div>
   </section>
 
   <!-- SOFTWARE BLOCKS (Simple cards list) -->
-  <section class="bg-white p-3 rounded shadow mx-5 mb-5">
-    <h2 class="font-bold mb-2">Software Blocks</h2>
+  <section class="bg-slate-800 p-3 rounded shadow mx-5 mb-5">
+    <h2 class="font-bold mb-2 text-slate-100">Software Blocks</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 px-3 mb-3">
-      <div class="bg-white p-3 shadow rounded">DSC Signer 4.1.8</div>
-      <div class="bg-white p-3 shadow rounded">Java Runtime 32/64</div>
-      <div class="bg-white p-3 shadow rounded">AnyDesk Remote</div>
-      <div class="bg-white p-3 shadow rounded">Google Hindi Input</div>
-      <div class="bg-white p-3 shadow rounded">NIC DSC Utility</div>
-      <div class="bg-white p-3 shadow rounded">ICEGATE Signer</div>
-      <div class="bg-white p-3 shadow rounded">PDF24 Toolkit</div>
-      <div class="bg-white p-3 shadow rounded">ILovePDF</div>
-      <div class="bg-white p-3 shadow rounded">RemoveBG</div>
-      <div class="bg-white p-3 shadow rounded">TinyPNG</div>
-      <div class="bg-white p-3 shadow rounded">Typing.com</div>
-      <div class="bg-white p-3 shadow rounded">Grammarly</div>
-      <div class="bg-white p-3 shadow rounded">QuillBot</div>
-      <div class="bg-white p-3 shadow rounded">Trello</div>
-      <div class="bg-white p-3 shadow rounded">Notion</div>
-      <div class="bg-white p-3 shadow rounded">ChatGPT</div>
+      <div class="bg-slate-700 p-3 shadow rounded">DSC Signer 4.1.8</div>
+      <div class="bg-slate-700 p-3 shadow rounded">Java Runtime 32/64</div>
+      <div class="bg-slate-700 p-3 shadow rounded">AnyDesk Remote</div>
+      <div class="bg-slate-700 p-3 shadow rounded">Google Hindi Input</div>
+      <div class="bg-slate-700 p-3 shadow rounded">NIC DSC Utility</div>
+      <div class="bg-slate-700 p-3 shadow rounded">ICEGATE Signer</div>
+      <div class="bg-slate-700 p-3 shadow rounded">PDF24 Toolkit</div>
+      <div class="bg-slate-700 p-3 shadow rounded">ILovePDF</div>
+      <div class="bg-slate-700 p-3 shadow rounded">RemoveBG</div>
+      <div class="bg-slate-700 p-3 shadow rounded">TinyPNG</div>
+      <div class="bg-slate-700 p-3 shadow rounded">Typing.com</div>
+      <div class="bg-slate-700 p-3 shadow rounded">Grammarly</div>
+      <div class="bg-slate-700 p-3 shadow rounded">QuillBot</div>
+      <div class="bg-slate-700 p-3 shadow rounded">Trello</div>
+      <div class="bg-slate-700 p-3 shadow rounded">Notion</div>
+      <div class="bg-slate-700 p-3 shadow rounded">ChatGPT</div>
     </div>
   </section>
 
   <!-- WEBAPP TOOLS 2025 -->
-  <section class="bg-white p-3 rounded shadow mx-3 mb-5">
-    <h2 class="font-bold mb-2">WebApp Tools 2025</h2>
+  <section class="bg-slate-800 p-3 rounded shadow mx-3 mb-5">
+    <h2 class="font-bold mb-2 text-slate-100">WebApp Tools 2025</h2>
     <div class="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-1 text-xs">
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://www.ilovepdf.com/', '_blank')">ILovePDF</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://smallpdf.com/', '_blank')">SmallPDF</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://tools.pdf24.org/', '_blank')">PDF24 Tools</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://www.adobe.com/acrobat/online/convert-pdf.html', '_blank')">Adobe PDF Tools</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://www.iloveimg.com/', '_blank')">ILoveIMG</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://tinypng.com/', '_blank')">TinyPNG</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://imageresizer.com/', '_blank')">Image Resizer</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://www.remove.bg/', '_blank')">RemoveBG</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://www.canva.com/', '_blank')">Canva</button>
-      <button class="bg-gray-200 text-black p-1 rounded" onclick="window.open('https://www.grammarly.com/', '_blank')">Grammarly</button>
-    </div>
-  </section>
+      <button class="bg-yellow-400 hover:bg-yellow-300 text-black p-1 rounded" onclick="window.open('https://www.ilovepdf.com/', '_blank')">ILovePDF</button>
+      <button class="bg-yellow-400 hover:bg-yellow-300 text-black p-1 rounded" onclick="window.open('https://smallpdf.com/', '_blank')">SmallPDF</button>
+      <
 
   <!-- CORE SERVICES SLIDER -->
   <h2 class="text-center text-lg font-bold text-gray-800">Core Services</h2>
