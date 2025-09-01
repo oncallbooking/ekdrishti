@@ -314,16 +314,23 @@
 
     </div>
     
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
   const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,         // show 3 boxes
-    spaceBetween: 20,         // gap between boxes
+    slidesPerView: 3,         // show 3 slides
+    spaceBetween: 20,         // gap between
     loop: true,               // infinite loop
-    autoplay: {
-      delay: 2000,            // auto slide every 2s
-      disableOnInteraction: false
-    },
     grabCursor: true,         // hand cursor for drag/swipe
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 2000,            // auto-slide every 2s
+      disableOnInteraction: false,
+    },
   });
 
   // Pause autoplay on hover
@@ -336,48 +343,6 @@
   });
 </script>
 
-    <!-- Pagination Dots -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true, // 👈 stops on hover
-      },
-    });
-  </script>
-</body>
-</html>    
-
-  </div>
-</section>
-
-  <!-- Swiper Slider Section -->
-<section class="...">
-   <div class="swiper mySwiper ...">
-   </div>
-</section>
-
-<!-- Separation Divider -->
-<div class="my-12">
-  <hr class="border-gray-600">
-</div>
 
   <!-- DOWNLOAD DSC & SLIDER SECTION -->
 <section class="bg-slate-800 p-5 rounded shadow mx-5 mb-5">
