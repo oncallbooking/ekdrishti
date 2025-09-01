@@ -313,10 +313,28 @@
       </div>
 
     </div>
+    
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,         // show 3 boxes
+    spaceBetween: 20,         // gap between boxes
+    loop: true,               // infinite loop
+    autoplay: {
+      delay: 2000,            // auto slide every 2s
+      disableOnInteraction: false
+    },
+    grabCursor: true,         // hand cursor for drag/swipe
+  });
 
-    <!-- Navigation Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+  // Pause autoplay on hover
+  const sliderEl = document.querySelector(".mySwiper");
+  sliderEl.addEventListener("mouseenter", () => {
+    swiper.autoplay.stop();
+  });
+  sliderEl.addEventListener("mouseleave", () => {
+    swiper.autoplay.start();
+  });
+</script>
 
     <!-- Pagination Dots -->
     <div class="swiper-pagination"></div>
