@@ -1,0 +1,26 @@
+# Robots.txt for ekdrishti.online
+# --------------------------------
+
+# Allow all search engines to crawl your public site
+User-agent: *
+Disallow:
+
+# Block common AI scrapers / bots
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Optional: add more bots if needed
+# User-agent: Google-Extended
+# Disallow: /
+
+# Sitemap (helps search engines crawl your site faster)
+Sitemap: https://ekdrishti.online/sitemap.xml
