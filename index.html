@@ -109,7 +109,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slider Demo</title>
 
-  <!-- TailwindCSS CDN -->
+  <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Swiper CSS -->
@@ -118,16 +118,16 @@
 <body class="bg-gray-900 text-white">
 
   <!-- Swiper Container -->
-  <div class="swiper mySwiper w-full max-w-7xl mx-auto mt-10">
+  <div class="swiper mySwiper w-full max-w-7xl mx-auto mt-5">
     <div class="swiper-wrapper">
 
-      <!-- Slide 1 -->
+      <!-- SLIDE 1 -->
       <div class="swiper-slide">
-       <section class="bg-slate-800 p-3 rounded shadow">
-      <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
-      #1/ More Quick Login Portals
-      </h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
+     <section class="bg-slate-800 p-3 rounded shadow">
+     <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
+     #1/ More Quick Login Portals
+     </h2>
+     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
       <a href="https://parichay.nic.in/" target="_blank" class="bg-blue-700 hover:bg-blue-600 text-white p-2 text-xs rounded flex flex-col items-center">
         <img src="https://img.icons8.com/ios-filled/30/ffffff/office.png" class="mb-2" alt="e-Office" />
         <span>e-Office</span>
@@ -185,11 +185,11 @@
         </section>
       </div>
 
-    <!-- Slide 2 -->
+    <!-- SLIDE 2 -->
     <div class="swiper-slide">
-     <section class="bg-slate-800 p-3 rounded shadow">
-     <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
-    #2/ Communication, Identity & Security Quick Login Portals
+    <section class="bg-slate-800 p-3 rounded shadow">
+    <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
+    #2/ Communication, Identity & Security
     </h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
     <!-- CERT-In / Cyber Swachhta Kendra -->
@@ -240,11 +240,11 @@
         </section>
       </div>
 
-     <!-- Slide 3 -->
-     <div class="swiper-slide">
-     <section class="bg-slate-800 p-3 rounded shadow">
+    <!-- SLIDE 3 -->
+    <div class="swiper-slide">
+    <section class="bg-slate-800 p-3 rounded shadow">
      <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
-     #3/ Accommodation | Travel & Transport | Health & Welfare
+     #3/ Accommodation | Travel & Health
     </h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
 
@@ -314,39 +314,29 @@
 
     </div>
 
-    <!-- Navigation Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-    <!-- Pagination Dots -->
+     <!-- Pagination -->
     <div class="swiper-pagination"></div>
   </div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
       spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true, // 👈 stops on hover
-      },
+      loop: true,
+      grabCursor: true,
+      pagination: { el: ".swiper-pagination", clickable: true },
+      autoplay: { delay: 2000, disableOnInteraction: false },
     });
+
+    // Hover Pause
+    const sliderEl = document.querySelector(".mySwiper");
+    sliderEl.addEventListener("mouseenter", () => swiper.autoplay.stop());
+    sliderEl.addEventListener("mouseleave", () => swiper.autoplay.start());
   </script>
 </body>
 </html>
-
 
 
  <!-- Quick Login -->
