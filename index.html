@@ -113,7 +113,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body class="bg-gray-900 text-white">
 
@@ -318,23 +318,30 @@
     <div class="swiper-pagination"></div>
   </div>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop: true,
-      grabCursor: true,
-      pagination: { el: ".swiper-pagination", clickable: true },
-      autoplay: { delay: 2000, disableOnInteraction: false },
-    });
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    // Hover Pause
-    const sliderEl = document.querySelector(".mySwiper");
-    sliderEl.addEventListener("mouseenter", () => swiper.autoplay.stop());
-    sliderEl.addEventListener("mouseleave", () => swiper.autoplay.start());
-  </script>
+<!-- Your init code -->
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 20,
+    speed: 600,
+    autoplay: { delay: 2000, disableOnInteraction: false },
+    grabCursor: true,
+    pagination: { el: ".swiper-pagination", clickable: true },
+    breakpoints: {
+      0:    { slidesPerView: 1 },
+      640:  { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+    loopAdditionalSlides: 1,
+  });
+
+  const sliderEl = document.querySelector(".mySwiper");
+  sliderEl.addEventListener("mouseenter", () => swiper.autoplay.stop());
+  sliderEl.addEventListener("mouseleave", () => swiper.autoplay.start());
+</script>
 </body>
 </html>
 
