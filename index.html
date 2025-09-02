@@ -107,7 +107,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slider Demo</title>
+  <title>Block Slider Demo</title>
 
   <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -116,13 +116,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <style>
-    /* Smooth zoom effect */
+    /* Smooth zoom effect for cards */
     .zoom-card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .zoom-card:hover {
       transform: scale(1.02);
       box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    }
+    /* Zoom effect for buttons */
+    .zoom-btn {
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+    }
+    .zoom-btn:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
@@ -204,11 +212,10 @@
       <div class="swiper-slide">
         <section class="bg-slate-800 p-3 rounded shadow zoom-card">
           <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
-            #2/ Communication, Identity & Security
+            #2/ Govt Employee Tools
           </h2>
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
-            <!-- content ... -->
-             <!-- CERT-In / Cyber Swachhta Kendra -->
+    <!-- CERT-In / Cyber Swachhta Kendra -->
     <a href="https://www.cyberswachhtakendra.gov.in" target="_blank" class="bg-red-700 hover:bg-red-600 text-white p-2 text-xs rounded flex flex-col items-center">
       <img src="https://img.icons8.com/ios-filled/30/ffffff/shield.png" class="mb-2" alt="Cyber Security" />
       <span>Cyber Swachhta</span>
@@ -258,14 +265,13 @@
       </div>
 
       <!-- SLIDE 3 -->
-      <div class="swiper-slide">
+       <div class="swiper-slide">
         <section class="bg-slate-800 p-3 rounded shadow zoom-card">
           <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
-            #3/ Accommodation | Travel & Health
+            #3/ Daily Portals
           </h2>
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
-            <!-- content ... -->
-                <!-- eSampada -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
+    <!-- eSampada -->
     <a href="https://esampada.mohua.gov.in" target="_blank" class="bg-teal-700 hover:bg-teal-600 text-white p-2 text-xs rounded flex flex-col items-center">
       <img src="https://img.icons8.com/ios-filled/30/ffffff/home.png" class="mb-2" alt="eSampada" />
       <span>eSampada</span>
@@ -332,39 +338,33 @@
 
     </div>
 
-    <!-- Pagination -->
-    <div class="swiper-pagination"></div>
+   <!-- Pagination Dots -->
+    <div class="swiper-pagination mt-4"></div>
   </div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Swiper Init -->
   <script>
     const swiper = new Swiper(".mySwiper", {
       loop: true,
       spaceBetween: 20,
       speed: 600,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
+      autoplay: { 
+        delay: 2000, 
+        disableOnInteraction: false, 
+        pauseOnMouseEnter: true 
       },
       grabCursor: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
+      pagination: { 
+        el: ".swiper-pagination", 
+        clickable: true 
       },
       breakpoints: {
-        0:    { slidesPerView: 1 },
-        640:  { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
+        0:   { slidesPerView: 1 },
+        640: { slidesPerView: 1 },
+        1024:{ slidesPerView: 1 }
       }
     });
-
-    // Stop autoplay on hover, resume on leave
-    const sliderEl = document.querySelector(".mySwiper");
-    sliderEl.addEventListener("mouseenter", () => swiper.autoplay.stop());
-    sliderEl.addEventListener("mouseleave", () => swiper.autoplay.start());
   </script>
 </body>
 </html>
