@@ -299,259 +299,229 @@
 
     
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Block Slider Demo</title>
+<title>Quick Login Dashboard</title>
 <!-- TailwindCSS -->
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- Swiper CSS -->
 <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
 <style>
-    /* Smooth zoom effect for cards */
-    .zoom-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .zoom-card:hover {
-      transform: scale(1.02);
-      box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
-    }
-    /* Zoom effect for buttons */
-    .zoom-btn {
-      transition: transform 0.2s ease-in-out;
-      cursor: pointer;
-    }
-    .zoom-btn:hover {
-      transform: scale(1.1);
-    }
-  </style>
+  /* Smooth zoom effect for cards */
+  .zoom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .zoom-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Shiny Matte Black Keyboard Buttons */
+  .keyboard-btn {
+    background: linear-gradient(145deg, #1a1a1a, #000000);
+    border: 1px solid #2b2b2b;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+                inset -2px -2px 5px rgba(0, 0, 0, 0.7),
+                0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    padding: 10px 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Glossy Shine Effect */
+  .keyboard-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.25), transparent 50%);
+    transform: rotate(25deg);
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  /* On Hover - Lift Effect */
+  .keyboard-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.15),
+                inset -2px -2px 5px rgba(0, 0, 0, 0.7),
+                0 10px 25px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Highlighted Name */
+  .keyboard-btn span {
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #00f6ff; /* Neon-like highlight */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    transition: color 0.3s ease;
+  }
+
+  /* Hover changes text glow */
+  .keyboard-btn:hover span {
+    color: #ffffff;
+    text-shadow: 0 0 8px #00e0ff, 0 0 12px #00e0ff;
+  }
+
+  /* Zoom effect for icons */
+  .keyboard-btn img {
+    transition: transform 0.2s ease;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  }
+  .keyboard-btn:hover img {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.6));
+  }
+</style>
 </head>
+<body class="bg-gray-900 text-white">
 <!-- Swiper Container -->
-<section class="bg-gray-900 text-white mb-10"> <!-- Added bottom margin -->
-<div class="swiper mySwiper w-full max-w-7xl mx-auto mt-10 mb-10"> <!-- Extra margin -->
+<section class="bg-gray-900 text-white mb-10">
+<div class="swiper mySwiper w-full max-w-7xl mx-auto mt-10 mb-10">
 <div class="swiper-wrapper">
+
 <!-- SLIDE 1 -->
 <div class="swiper-slide">
 <section class="bg-slate-800 p-3 rounded shadow zoom-card">
 <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
-           Quick Login Dashboard |e-Office(Parichay) | IREPS | HRMS | RDSO | ROAMS (CRIS) | AIMS/iPAS | IRICEN | CORE SSO | NTES | IRCEP | PB/MAS | AISMA |
-          </h2>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
-<a class="bg-blue-700 hover:bg-blue-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://parichay.nic.in/" target="_blank">
-<img alt="e-Office" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/office.png"/>
-<span>e-Office</span>
-</a>
-<a class="bg-sky-600 hover:bg-sky-500 text-white p-2 text-xs rounded flex flex-col items-center" href="https://ireps.gov.in/" target="_blank">
-<img alt="IREPS" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/train.png"/>
-<span>IREPS</span>
-</a>
-<a class="bg-blue-800 hover:bg-blue-700 text-white p-2 text-xs rounded flex flex-col items-center" href="https://hrms.indianrail.gov.in/HRMS/login?timeout" target="_blank">
-<img alt="HRMS" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/id-verified.png"/>
-<span>HRMS</span>
-</a>
-<a class="bg-sky-700 hover:bg-sky-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://rdso.indianrailways.gov.in/" target="_blank">
-<img alt="RDSO" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/organization.png"/>
-<span>RDSO</span>
-</a>
-<a class="bg-blue-600 hover:bg-blue-500 text-white p-2 text-xs rounded flex flex-col items-center" href="https://roams.cris.org.in/uaa/login" target="_blank">
-<img alt="ROAMS" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/lock-2.png"/>
-<span>ROAMS (CRIS)</span>
-</a>
-<a class="bg-sky-800 hover:bg-sky-700 text-white p-2 text-xs rounded flex flex-col items-center" href="https://aims.indianrailways.gov.in/IPAS/LoginForms/Login.jsp" target="_blank">
-<img alt="AIMS" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/money.png"/>
-<span>AIMS</span>
-</a>
-<!-- IRICEN -->
-<a class="bg-green-700 hover:bg-green-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://iricen.gov.in/iricen/UserHome.jsp" target="_blank">
-<img alt="IRICEN" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/graduation-cap.png"/>
-<span>IRICEN</span>
-</a>
-<!-- CORE - SSO -->
-<a class="bg-red-700 hover:bg-red-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://sso.indianrailways.gov.in/" target="_blank">
-<img alt="CORE SSO" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/network.png"/>
-<span>CORE SSO</span>
-</a>
-<!-- NTES -->
-<a class="bg-teal-700 hover:bg-teal-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://enquiry.indianrail.gov.in/" target="_blank">
-<img alt="NTES" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/search.png"/>
-<span>NTES</span>
-</a>
-<!-- IRCEP -->
-<a class="bg-amber-700 hover:bg-amber-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://ircep.gov.in/IRPSM/" target="_blank">
-<img alt="IRCEP" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/project.png"/>
-<span>IRCEP</span>
-</a>
-<!-- PB/MAS -->
-<a class="bg-purple-700 hover:bg-purple-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.pbmas.in/employee-corner.php" target="_blank">
-<img alt="PB/MAS" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/conference.png"/>
-<span>PB/MAS</span>
-</a>
-<!-- AISMA -->
-<a class="bg-indigo-700 hover:bg-indigo-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.aisma.in/" target="_blank">
-<img alt="AISMA" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/organization.png"/>
-<span>AISMA</span>
-</a>
-<!-- other items ... -->
+Quick Login Dashboard | e-Office(Parichay) | IREPS | HRMS | RDSO | ROAMS (CRIS) | AIMS/iPAS | IRICEN | CORE SSO | NTES | IRCEP | PB/MAS | AISMA |
+</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 p-3 text-center">
+<a class="keyboard-btn" href="https://parichay.nic.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/office.png"/><span>e-Office</span></a>
+<a class="keyboard-btn" href="https://ireps.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/train.png"/><span>IREPS</span></a>
+<a class="keyboard-btn" href="https://hrms.indianrail.gov.in/HRMS/login?timeout" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/id-verified.png"/><span>HRMS</span></a>
+<a class="keyboard-btn" href="https://rdso.indianrailways.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/organization.png"/><span>RDSO</span></a>
+<a class="keyboard-btn" href="https://roams.cris.org.in/uaa/login" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/lock-2.png"/><span>ROAMS</span></a>
+<a class="keyboard-btn" href="https://aims.indianrailways.gov.in/IPAS/LoginForms/Login.jsp" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/money.png"/><span>AIMS</span></a>
+<a class="keyboard-btn" href="https://iricen.gov.in/iricen/UserHome.jsp" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/graduation-cap.png"/><span>IRICEN</span></a>
+<a class="keyboard-btn" href="https://sso.indianrailways.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/network.png"/><span>CORE SSO</span></a>
+<a class="keyboard-btn" href="https://enquiry.indianrail.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/search.png"/><span>NTES</span></a>
+<a class="keyboard-btn" href="https://ircep.gov.in/IRPSM/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/project.png"/><span>IRCEP</span></a>
+<a class="keyboard-btn" href="https://www.pbmas.in/employee-corner.php" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/conference.png"/><span>PB/MAS</span></a>
+<a class="keyboard-btn" href="https://www.aisma.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/organization.png"/><span>AISMA</span></a>
 </div>
 </section>
 </div>
+
 <!-- SLIDE 2 -->
 <div class="swiper-slide">
 <section class="bg-slate-800 p-3 rounded shadow zoom-card">
 <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
-Quick Govt Employee Tools Login | Cyber Security | Cyber Swachhta | NIC Mail | Kavach 2FA | Sandes | NIC Webex | BharatKosh | UMANG | DigiLocker | CSC |
+Quick Govt Employee Tools Login | Cyber Security | NIC Mail | Kavach 2FA | Sandes | NIC Webex | BharatKosh | UMANG | DigiLocker | CSC |
 </h2>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
-<!-- CERT-In / Cyber Swachhta Kendra -->
-<a class="bg-red-700 hover:bg-red-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.cyberswachhtakendra.gov.in" target="_blank">
-<img alt="Cyber Security" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/shield.png"/>
-<span>Cyber Swachhta</span>
-</a>
-<!-- NIC Mail -->
-<a class="bg-cyan-700 hover:bg-cyan-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://mail.gov.in" target="_blank">
-<img alt="NIC Mail" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/email.png"/>
-<span>NIC Mail</span>
-</a>
-<!-- Kavach -->
-<a class="bg-teal-700 hover:bg-teal-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://kavach.mail.gov.in" target="_blank">
-<img alt="Kavach" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/lock.png"/>
-<span>Kavach 2FA</span>
-</a>
-<!-- Sandes -->
-<a class="bg-orange-700 hover:bg-orange-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.sandes.gov.in" target="_blank">
-<img alt="Sandes" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/chat.png"/>
-<span>Sandes</span>
-</a>
-<!-- NIC Webex -->
-<a class="bg-gray-700 hover:bg-gray-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://webex.nic.in" target="_blank">
-<img alt="NIC Webex" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/video-call.png"/>
-<span>NIC Webex</span>
-</a>
-<!-- BharatKosh -->
-<a class="bg-purple-700 hover:bg-purple-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://bharatkosh.gov.in/" target="_blank">
-<img alt="BharatKosh" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/money.png"/>
-<span>BharatKosh</span>
-</a>
-<!-- UMANG -->
-<a class="bg-pink-700 hover:bg-pink-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://web.umang.gov.in/" target="_blank">
-<img alt="UMANG" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/mobile-payment.png"/>
-<span>UMANG</span>
-</a>
-<!-- Digilocker -->
-<a class="bg-indigo-700 hover:bg-indigo-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.digilocker.gov.in/" target="_blank">
-<img alt="DigiLocker" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/cloud.png"/>
-<span>DigiLocker</span>
-</a>
-<!-- CSC -->
-<a class="bg-yellow-700 hover:bg-yellow-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://csc.gov.in/" target="_blank">
-<img alt="CSC" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/network.png"/>
-<span>CSC</span>
-</a>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 p-3 text-center">
+<a class="keyboard-btn" href="https://www.cyberswachhtakendra.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/shield.png"/><span>Cyber Swachhta</span></a>
+<a class="keyboard-btn" href="https://mail.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/email.png"/><span>NIC Mail</span></a>
+<a class="keyboard-btn" href="https://kavach.mail.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/lock.png"/><span>Kavach 2FA</span></a>
+<a class="keyboard-btn" href="https://www.sandes.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/chat.png"/><span>Sandes</span></a>
+<a class="keyboard-btn" href="https://webex.nic.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/video-call.png"/><span>NIC Webex</span></a>
+<a class="keyboard-btn" href="https://bharatkosh.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/money.png"/><span>BharatKosh</span></a>
+<a class="keyboard-btn" href="https://web.umang.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/mobile-payment.png"/><span>UMANG</span></a>
+<a class="keyboard-btn" href="https://www.digilocker.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/cloud.png"/><span>DigiLocker</span></a>
+<a class="keyboard-btn" href="https://csc.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/network.png"/><span>CSC</span></a>
 </div>
 </section>
 </div>
+
 <!-- SLIDE 3 -->
 <div class="swiper-slide">
 <section class="bg-slate-800 p-3 rounded shadow zoom-card">
 <h2 class="font-bold mb-4 text-slate-100 border border-slate-500 rounded-lg px-4 py-2 text-center">
-      Daily Portals Login | eSampada | Parivahan | India Post | IRCTC | NTES | CGHS | ESIC | Ayushman Bharat | CPGRAMS | eGazette | India Code | RTI Online|
-          </h2>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 p-3 text-center">
-<!-- eSampada -->
-<a class="bg-teal-700 hover:bg-teal-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://esampada.mohua.gov.in" target="_blank">
-<img alt="eSampada" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/home.png"/>
-<span>eSampada</span>
-</a>
-<!-- Parivahan -->
-<a class="bg-orange-700 hover:bg-orange-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://parivahan.gov.in" target="_blank">
-<img alt="Parivahan" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/car.png"/>
-<span>Parivahan</span>
-</a>
-<!-- India Post -->
-<a class="bg-red-700 hover:bg-red-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.indiapost.gov.in/" target="_blank">
-<img alt="India Post" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/send.png"/>
-<span>India Post</span>
-</a>
-<!-- IRCTC -->
-<a class="bg-indigo-700 hover:bg-indigo-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.irctc.co.in/" target="_blank">
-<img alt="IRCTC" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/train.png"/>
-<span>IRCTC</span>
-</a>
-<!-- NTES -->
-<a class="bg-gray-700 hover:bg-gray-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://enquiry.indianrail.gov.in/ntes/" target="_blank">
-<img alt="NTES" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/timetable.png"/>
-<span>NTES</span>
-</a>
-<!-- CGHS -->
-<a class="bg-green-700 hover:bg-green-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://cghs.nic.in" target="_blank">
-<img alt="CGHS" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/hospital-room.png"/>
-<span>CGHS</span>
-</a>
-<!-- ESIC -->
-<a class="bg-pink-700 hover:bg-pink-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.esic.gov.in" target="_blank">
-<img alt="ESIC" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/identification-documents.png"/>
-<span>ESIC</span>
-</a>
-<!-- Ayushman Bharat -->
-<a class="bg-yellow-700 hover:bg-yellow-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://pmjay.gov.in" target="_blank">
-<img alt="Ayushman Bharat" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/health-book.png"/>
-<span>Ayushman</span>
-</a>
-<!-- CPGRAMS -->
-<a class="bg-cyan-700 hover:bg-cyan-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://pgportal.gov.in" target="_blank">
-<img alt="CPGRAMS" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/help.png"/>
-<span>CPGRAMS</span>
-</a>
-<!-- eGazette -->
-<a class="bg-purple-700 hover:bg-purple-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://egazette.gov.in" target="_blank">
-<img alt="eGazette" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/news.png"/>
-<span>eGazette</span>
-</a>
-<!-- India Code -->
-<a class="bg-lime-700 hover:bg-lime-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://www.indiacode.nic.in" target="_blank">
-<img alt="India Code" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/law.png"/>
-<span>India Code</span>
-</a>
-<!-- RTI Online -->
-<a class="bg-fuchsia-700 hover:bg-fuchsia-600 text-white p-2 text-xs rounded flex flex-col items-center" href="https://rtionline.gov.in" target="_blank">
-<img alt="RTI" class="mb-2" src="https://img.icons8.com/ios-filled/30/ffffff/search.png"/>
-<span>RTI Online</span>
-</a>
+Daily Portals Login | eSampada | Parivahan | India Post | IRCTC | NTES | CGHS | ESIC | Ayushman Bharat | CPGRAMS | eGazette | India Code | RTI Online |
+</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 p-3 text-center">
+<a class="keyboard-btn" href="https://esampada.mohua.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/home.png"/><span>eSampada</span></a>
+<a class="keyboard-btn" href="https://parivahan.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/car.png"/><span>Parivahan</span></a>
+<a class="keyboard-btn" href="https://www.indiapost.gov.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/send.png"/><span>India Post</span></a>
+<a class="keyboard-btn" href="https://www.irctc.co.in/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/train.png"/><span>IRCTC</span></a>
+<a class="keyboard-btn" href="https://enquiry.indianrail.gov.in/ntes/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/timetable.png"/><span>NTES</span></a>
+<a class="keyboard-btn" href="https://cghs.nic.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/hospital-room.png"/><span>CGHS</span></a>
+<a class="keyboard-btn" href="https://www.esic.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/identification-documents.png"/><span>ESIC</span></a>
+<a class="keyboard-btn" href="https://pmjay.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/health-book.png"/><span>Ayushman</span></a>
+<a class="keyboard-btn" href="https://pgportal.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/help.png"/><span>CPGRAMS</span></a>
+<a class="keyboard-btn" href="https://egazette.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/news.png"/><span>eGazette</span></a>
+<a class="keyboard-btn" href="https://www.indiacode.nic.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/law.png"/><span>India Code</span></a>
+<a class="keyboard-btn" href="https://rtionline.gov.in" target="_blank">
+<img src="https://img.icons8.com/ios-filled/30/ffffff/search.png"/><span>RTI Online</span></a>
 </div>
 </section>
 </div>
 </div>
+
 <!-- Pagination Dots -->
 <div class="swiper-pagination mt-4"></div>
 </div>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 20,
-      speed: 600,
-      autoplay: { 
-        delay: 2000, 
-        disableOnInteraction: false, 
-        pauseOnMouseEnter: true 
-      },
-      grabCursor: true,
-      pagination: { 
-        el: ".swiper-pagination", 
-        clickable: true 
-      },
-      breakpoints: {
-        0:   { slidesPerView: 1 },
-        640: { slidesPerView: 1 },
-        1024:{ slidesPerView: 1 }
-      }
-    });
-  </script>
-</section></html></body>
+const swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 20,
+  speed: 600,
+  autoplay: { 
+    delay: 2500, 
+    disableOnInteraction: false, 
+    pauseOnMouseEnter: true 
+  },
+  grabCursor: true,
+  pagination: { 
+    el: ".swiper-pagination", 
+    clickable: true 
+  },
+  breakpoints: {
+    0:   { slidesPerView: 1 },
+    640: { slidesPerView: 1 },
+    1024:{ slidesPerView: 1 }
+  }
+});
+</script>
+</section>
+</body>
 </html>
+
 
   <section class="bg-slate-800 p-5 rounded shadow mx-5 mb-5">
   <!-- HEADING -->
