@@ -845,12 +845,25 @@ const swiper = new Swiper(".mySwiper", {
     .card:hover { transform: translateY(-8px); box-shadow: 0 0 25px rgba(0, 234, 255, 0.6); }
     .card h3 { color: #00ffc8; margin-bottom: 10px; }
     .card p { font-size: 0.95rem; color: #aaa; }
-    .card a button {
-      margin-top: 15px; padding: 8px 15px; border: none;
-      border-radius: 15px; background: #00ffc8; color: #111;
-      cursor: pointer; transition: all 0.3s ease;
+
+    /* Styled button-like links */
+    .card a.btn-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 15px;
+      border: 2px solid #00eaff;
+      border-radius: 15px;
+      background: #1a1a2e;
+      color: #00eaff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
     }
-    .card a button:hover { background: #00eaff; box-shadow: 0 0 10px #00eaff; }
+    .card a.btn-link:hover {
+      background: #162447;
+      color: #fff;
+      box-shadow: 0 0 15px #00eaff;
+    }
 
     .career-footer { text-align: center; margin-top: 50px; font-size: 1.1rem; color: #8deaff; font-style: italic; }
 
@@ -877,58 +890,66 @@ const swiper = new Swiper(".mySwiper", {
 
     <!-- Study Resources -->
     <div id="resources" class="tab-content active">
-      <div class="card"><h3>Khan Academy</h3><p>Free world-class learning for all ages.</p><a href="https://www.khanacademy.org" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>NPTEL</h3><p>India’s top IIT/IIsc online learning lectures.</p><a href="https://nptel.ac.in" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>Coursera</h3><p>Online courses from world’s top universities.</p><a href="https://www.coursera.org" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>edX</h3><p>Learn from Harvard, MIT, and more.</p><a href="https://www.edx.org" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>Byju’s</h3><p>Interactive school & competitive learning.</p><a href="https://byjus.com" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>Toppr</h3><p>Study materials & practice tests for students.</p><a href="https://www.toppr.com" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>Vedantu</h3><p>Live online tutoring for school & exams.</p><a href="https://www.vedantu.com" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>Unacademy</h3><p>India’s largest learning platform.</p><a href="https://unacademy.com" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>NCERT Official</h3><p>Free school textbooks in PDF format.</p><a href="https://ncert.nic.in" target="_blank"><button>Visit</button></a></div>
-      <div class="card"><h3>MIT OpenCourseWare</h3><p>Free MIT university course content.</p><a href="https://ocw.mit.edu" target="_blank"><button>Visit</button></a></div>
+      <div class="card"><h3>Khan Academy</h3><p>Free world-class learning for all ages.</p><a href="https://www.khanacademy.org" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>NPTEL</h3><p>India’s top IIT/IIsc online learning lectures.</p><a href="https://nptel.ac.in" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>Coursera</h3><p>Online courses from world’s top universities.</p><a href="https://www.coursera.org" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>edX</h3><p>Learn from Harvard, MIT, and more.</p><a href="https://www.edx.org" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>Byju’s</h3><p>Interactive school & competitive learning.</p><a href="https://byjus.com" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>Toppr</h3><p>Study materials & practice tests for students.</p><a href="https://www.toppr.com" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>Vedantu</h3><p>Live online tutoring for school & exams.</p><a href="https://www.vedantu.com" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>Unacademy</h3><p>India’s largest learning platform.</p><a href="https://unacademy.com" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>NCERT Official</h3><p>Free school textbooks in PDF format.</p><a href="https://ncert.nic.in" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>MIT OpenCourseWare</h3><p>Free MIT university course content.</p><a href="https://ocw.mit.edu" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>Academic Earth</h3><p>Free online college courses.</p><a href="https://academicearth.org" target="_blank" class="btn-link">Visit</a></div>
+      <div class="card"><h3>FutureLearn</h3><p>Global online learning for skills.</p><a href="https://www.futurelearn.com" target="_blank" class="btn-link">Visit</a></div>
     </div>
 
     <!-- Career Choices -->
     <div id="career" class="tab-content">
-      <div class="card"><h3>Engineering (NPTEL Career Guide)</h3><p>Roadmap for JEE, GATE, and IIT career.</p><a href="https://nptel.ac.in/career" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>Medicine (AIIMS/NEET)</h3><p>NEET, AIIMS & MBBS pathways.</p><a href="https://www.mciindia.org" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>Law (Bar Council India)</h3><p>LLB, CLAT prep, judiciary jobs.</p><a href="https://www.barcouncilofindia.org" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>UPSC Path</h3><p>IAS/IPS/IFS career roadmap.</p><a href="https://www.upsc.gov.in" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>Chartered Accountant</h3><p>CA/CS/CMA career guide.</p><a href="https://www.icai.org" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>Architecture (COA)</h3><p>NATA, B.Arch career opportunities.</p><a href="https://www.coa.gov.in" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>Defence (Join Indian Army)</h3><p>NDA, CDS, AFCAT career roadmap.</p><a href="https://joinindianarmy.nic.in" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>Data Science</h3><p>Analytics, AI, and ML careers.</p><a href="https://www.datasciencecentral.com" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>Teaching (NTA/UGC NET)</h3><p>Lecturer, professor pathways.</p><a href="https://ugcnet.nta.nic.in" target="_blank"><button>Explore</button></a></div>
-      <div class="card"><h3>Entrepreneurship</h3><p>Startup India resources & guidance.</p><a href="https://www.startupindia.gov.in" target="_blank"><button>Explore</button></a></div>
+      <div class="card"><h3>Engineering (NPTEL Career Guide)</h3><p>Roadmap for JEE, GATE, and IIT career.</p><a href="https://nptel.ac.in/career" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Medicine (AIIMS/NEET)</h3><p>NEET, AIIMS & MBBS pathways.</p><a href="https://www.mciindia.org" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Law (Bar Council India)</h3><p>LLB, CLAT prep, judiciary jobs.</p><a href="https://www.barcouncilofindia.org" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>UPSC Path</h3><p>IAS/IPS/IFS career roadmap.</p><a href="https://www.upsc.gov.in" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Chartered Accountant</h3><p>CA/CS/CMA career guide.</p><a href="https://www.icai.org" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Architecture (COA)</h3><p>NATA, B.Arch career opportunities.</p><a href="https://www.coa.gov.in" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Defence (Join Indian Army)</h3><p>NDA, CDS, AFCAT career roadmap.</p><a href="https://joinindianarmy.nic.in" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Data Science</h3><p>Analytics, AI, and ML careers.</p><a href="https://www.datasciencecentral.com" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Teaching (NTA/UGC NET)</h3><p>Lecturer, professor pathways.</p><a href="https://ugcnet.nta.nic.in" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Entrepreneurship</h3><p>Startup India resources & guidance.</p><a href="https://www.startupindia.gov.in" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Hospitality & Tourism</h3><p>Career in hotels, travel, and tourism.</p><a href="https://www.iihm.ac.in" target="_blank" class="btn-link">Explore</a></div>
+      <div class="card"><h3>Animation & VFX</h3><p>Design, multimedia, and animation careers.</p><a href="https://www.maacindia.com" target="_blank" class="btn-link">Explore</a></div>
     </div>
 
     <!-- Government Jobs -->
     <div id="jobs" class="tab-content">
-      <div class="card"><h3>UPSC</h3><p>IAS, IPS, IFS exams.</p><a href="https://www.upsc.gov.in" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>SSC</h3><p>CGL, CHSL, JE, MTS recruitments.</p><a href="https://ssc.nic.in" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>IBPS</h3><p>Bank PO, Clerk, RRB exams.</p><a href="https://www.ibps.in" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>SBI Careers</h3><p>PO, Clerk jobs at SBI.</p><a href="https://sbi.co.in/web/careers" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>Railways (RRB)</h3><p>RRB NTPC, Group D, JE exams.</p><a href="https://indianrailways.gov.in" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>DRDO</h3><p>Research & defence technology jobs.</p><a href="https://www.drdo.gov.in" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>ISRO</h3><p>Space research career opportunities.</p><a href="https://www.isro.gov.in" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>Indian Army</h3><p>NDA, CDS, technical entry.</p><a href="https://joinindianarmy.nic.in" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>Indian Navy</h3><p>SSC, NDA, Navy SSR jobs.</p><a href="https://www.joinindiannavy.gov.in" target="_blank"><button>Apply</button></a></div>
-      <div class="card"><h3>Indian Air Force</h3><p>AFCAT, NDA, technical posts.</p><a href="https://indianairforce.nic.in" target="_blank"><button>Apply</button></a></div>
+      <div class="card"><h3>UPSC</h3><p>IAS, IPS, IFS exams.</p><a href="https://www.upsc.gov.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>SSC</h3><p>CGL, CHSL, JE, MTS recruitments.</p><a href="https://ssc.nic.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>IBPS</h3><p>Bank PO, Clerk, RRB exams.</p><a href="https://www.ibps.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>SBI Careers</h3><p>PO, Clerk jobs at SBI.</p><a href="https://sbi.co.in/web/careers" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>Railways (RRB)</h3><p>RRB NTPC, Group D, JE exams.</p><a href="https://indianrailways.gov.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>DRDO</h3><p>Research & defence technology jobs.</p><a href="https://www.drdo.gov.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>ISRO</h3><p>Space research career opportunities.</p><a href="https://www.isro.gov.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>Indian Army</h3><p>NDA, CDS, technical entry.</p><a href="https://joinindianarmy.nic.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>Indian Navy</h3><p>SSC, NDA, Navy SSR jobs.</p><a href="https://www.joinindiannavy.gov.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>Indian Air Force</h3><p>AFCAT, NDA, technical posts.</p><a href="https://indianairforce.nic.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>LIC</h3><p>AAO, ADO, insurance sector jobs.</p><a href="https://licindia.in" target="_blank" class="btn-link">Apply</a></div>
+      <div class="card"><h3>State PSC</h3><p>Various state-level government exams.</p><a href="https://www.psc.ap.gov.in" target="_blank" class="btn-link">Apply</a></div>
     </div>
 
     <!-- Skill Building -->
     <div id="skills" class="tab-content">
-      <div class="card"><h3>GeeksforGeeks</h3><p>Coding tutorials, DSA, placements.</p><a href="https://www.geeksforgeeks.org" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>LeetCode</h3><p>Competitive coding practice.</p><a href="https://leetcode.com" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>HackerRank</h3><p>Coding challenges & skill tests.</p><a href="https://www.hackerrank.com" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>FreeCodeCamp</h3><p>Web dev & coding projects.</p><a href="https://www.freecodecamp.org" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>Udemy</h3><p>Affordable online skill courses.</p><a href="https://www.udemy.com" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>LinkedIn Learning</h3><p>Business, design, and tech skills.</p><a href="https://www.linkedin.com/learning" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>Skillshare</h3><p>Creative and technical skill courses.</p><a href="https://www.skillshare.com" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>Codeacademy</h3><p>Interactive coding lessons.</p><a href="https://www.codecademy.com" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>Great Learning</h3><p>AI, ML, cloud & business skills.</p><a href="https://www.mygreatlearning.com" target="_blank"><button>Learn</button></a></div>
-      <div class="card"><h3>Pluralsight</h3><p>Tech skill assessments & courses.</p><a href="https://www.pluralsight.com" target="_blank"><button>Learn</button></a></div>
+      <div class="card"><h3>GeeksforGeeks</h3><p>Coding tutorials, DSA, placements.</p><a href="https://www.geeksforgeeks.org" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>LeetCode</h3><p>Competitive coding practice.</p><a href="https://leetcode.com" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>HackerRank</h3><p>Coding challenges & skill tests.</p><a href="https://www.hackerrank.com" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>FreeCodeCamp</h3><p>Web dev & coding projects.</p><a href="https://www.freecodecamp.org" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>Udemy</h3><p>Affordable online skill courses.</p><a href="https://www.udemy.com" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>LinkedIn Learning</h3><p>Business, design, and tech skills.</p><a href="https://www.linkedin.com/learning" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>Skillshare</h3><p>Creative and technical skill courses.</p><a href="https://www.skillshare.com" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>Codecademy</h3><p>Interactive coding lessons.</p><a href="https://www.codecademy.com" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>Great Learning</h3><p>AI, ML, cloud & business skills.</p><a href="https://www.mygreatlearning.com" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>Pluralsight</h3><p>Tech skill assessments & courses.</p><a href="https://www.pluralsight.com" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>Kaggle</h3><p>Data science, ML competitions & datasets.</p><a href="https://www.kaggle.com" target="_blank" class="btn-link">Learn</a></div>
+      <div class="card"><h3>edureka!</h3><p>Industry-ready certification training.</p><a href="https://www.edureka.co" target="_blank" class="btn-link">Learn</a></div>
     </div>
 
     <div class="career-footer">“Every student has one vision – a bright future.”</div>
@@ -945,9 +966,10 @@ const swiper = new Swiper(".mySwiper", {
 
         let tabId = btn.getAttribute("data-tab");
         tabContents.forEach(content => {
-          content.classList.remove("active");
           if (content.id === tabId) {
             content.classList.add("active");
+          } else {
+            content.classList.remove("active");
           }
         });
       });
@@ -955,8 +977,9 @@ const swiper = new Swiper(".mySwiper", {
   </script>
 </body>
 </html>
+ </section>
 
-</section>
+
     
 <!-- BLOG / LATEST UPDATES -->
 <div class="container mx-auto my-16 px-4">
