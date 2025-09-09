@@ -688,32 +688,69 @@ const swiper = new Swiper(".mySwiper", {
       </div>
     </div>
 
-    <!-- RIGHT BOX (4 IMAGE BOXES) -->
+<!-- RIGHT BOX (4 IMAGE BOXES) -->
 <div class="bg-slate-700 p-4 rounded shadow">
   <h3 class="text-white font-semibold mb-3 text-center">Screenshots / Guides</h3>
-  
+
   <div class="grid grid-cols-2 gap-4">
-    <!-- IMAGE 1 -->
-    <div class="bg-slate-600 rounded overflow-hidden shadow hover:scale-105 transition duration-300 cursor-pointer flex justify-center items-center">
-      <img src="assets/ad1.jpg" alt="Guide 1" class="w-full max-h-48 object-contain">
-    </div>
     
+    <!-- IMAGE 1 (SLIDER CLICKABLE) -->
+    <a href="https://ekdrishti.onrender.com/" target="_blank" 
+       class="bg-slate-600 rounded overflow-hidden shadow flex justify-center items-center relative">
+      <img id="slide" src="assets/concept1.png" alt="Guide 1" 
+           class="w-full max-h-48 object-contain transition-opacity duration-500">
+    </a>
+
     <!-- IMAGE 2 -->
-    <div class="bg-slate-600 rounded overflow-hidden shadow hover:scale-105 transition duration-300 cursor-pointer flex justify-center items-center">
-      <img src="assets/ad1.jpg" alt="Guide 2" class="w-full max-h-48 object-contain">
-    </div>
-    
+    <a href="https://ekdrishti.onrender.com/" target="_blank" 
+       class="bg-slate-600 rounded overflow-hidden shadow hover:scale-105 transition duration-300 flex justify-center items-center">
+      <img src="assets/concept2.png" alt="Guide 2" class="w-full max-h-48 object-contain">
+    </a>
+
     <!-- IMAGE 3 -->
-    <div class="bg-slate-600 rounded overflow-hidden shadow hover:scale-105 transition duration-300 cursor-pointer flex justify-center items-center">
-      <img src="assets/ad1.jpg" alt="Guide 3" class="w-full max-h-48 object-contain">
-    </div>
-    
+    <a href="https://ekdrishti.onrender.com/" target="_blank" 
+       class="bg-slate-600 rounded overflow-hidden shadow hover:scale-105 transition duration-300 flex justify-center items-center">
+      <img src="assets/concept3.png" alt="Guide 3" class="w-full max-h-48 object-contain">
+    </a>
+
     <!-- IMAGE 4 -->
-    <div class="bg-slate-600 rounded overflow-hidden shadow hover:scale-105 transition duration-300 cursor-pointer flex justify-center items-center">
-      <img src="assets/ad1.jpg" alt="Guide 4" class="w-full max-h-48 object-contain">
-    </div>
+    <a href="https://ekdrishti.onrender.com/" target="_blank" 
+       class="bg-slate-600 rounded overflow-hidden shadow hover:scale-105 transition duration-300 flex justify-center items-center">
+      <img src="assets/concept4.png" alt="Guide 4" class="w-full max-h-48 object-contain">
+    </a>
+
   </div>
 </div>
+
+<!-- JS for Slider -->
+<script>
+  const slides = [
+    "assets/concept1.png",
+    "assets/concept2.png",
+    "assets/concept3.png",
+    "assets/concept4.png",
+    "assets/concept5.png",
+    "assets/concept6.png",
+    "assets/concept7.png",
+    "assets/concept8.png"
+  ];
+
+  let index = 0;
+  const slide = document.getElementById("slide");
+
+  function showSlide() {
+    slide.src = slides[index];
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide();
+  }
+
+  // Auto Slide every 3 sec
+  setInterval(nextSlide, 3000);
+</script>
+
 </section>
 
 
