@@ -144,21 +144,35 @@
 <button class="absolute top-1/2 left-3 -translate-y-1/2 bg-slate-800 text-white px-3 py-2 rounded-full z-10" id="hero-prev" type="button">‹</button>
 <button class="absolute top-1/2 right-3 -translate-y-1/2 bg-slate-800 text-white px-3 py-2 rounded-full z-10" id="hero-next" type="button">›</button>
 </section>
-<!-- Ticker -->
-<div class="bg-black-800 text-yellow-400 text-base md:text-lg font-bold px-6 py-3 tracking-wide shadow-md overflow-hidden relative">
-<div class="ticker">
-<div class="ticker__track">
-      ⚡ 📢 महत्वपूर्ण सूचना: यह वेबसाइट एक वन-स्टॉप डिजिटल डेस्क है जहाँ सरकारी कर्मचारी, रेलवे, PSU स्टाफ और प्रतियोगी परीक्षाओं की तैयारी करने वाले छात्र सभी उपयोगी सुविधाएँ एक ही जगह पा सकते हैं। 
+<!-- Important Notice Ticker -->
+<div class="ticker-bar">
+  <div class="ticker">
+    <div class="ticker__track">
+      📢 महत्वपूर्ण सूचना: यह वेबसाइट एक वन-स्टॉप डिजिटल डेस्क है जहाँ सरकारी कर्मचारी, रेलवे, PSU स्टाफ और प्रतियोगी परीक्षाओं की तैयारी करने वाले छात्र सभी उपयोगी सुविधाएँ एक ही जगह पा सकते हैं। 
       यहाँ आपको मिलेंगे सभी सरकारी पोर्टल्स के लिंक, आधिकारिक सॉफ़्टवेयर (DSC Signer, Java 8, Token Drivers) और रोज़मर्रा के टूल्स (Image Resizer, PDF Editor, PPT Maker, File Reducer)। 
       साथ ही आप यहाँ ट्रेन PNR स्टेटस, बस व फ्लाइट स्टेटस, परीक्षा परिणाम व एडमिट कार्ड, कोर्ट केस स्टेटस, भूमि रेकॉर्ड / प्लॉट सर्च, Lost &amp; Found सेवाएँ और बहुत कुछ देख सकते हैं। 
-      👉 इसलिए हर सरकारी कर्मचारी और छात्र को इस वेबसाइट को Bookmark करना चाहिए। 📢 IMPORTANT NOTICE: This website is a One-Stop Digital Desk for all Government Employees, PSU Staff, and Students preparing for competitive exams. 
-      Here you will find all Government Login Portals + Official Software (DSC Signer, Java 8, Token Drivers) and useful daily tools (Image Resizer, PDF Editor, PPT Maker, File Reducer). 
-      You can also track Train PNR Status, Bus &amp; Flight Status, Exam Results &amp; Admit Cards, Court Case Status, Land Records / Plot Search, Lost &amp; Found Services and much more. 
-      👉 That’s why every Government Employee &amp; Student must Bookmark this site! ⚡
+      👉 इसलिए हर सरकारी कर्मचारी और छात्र को इस वेबसाइट को Bookmark करना चाहिए।
     </div>
+  </div>
 </div>
-</div>
+
 <style>
+/* Moonlight neon ticker bar */
+.ticker-bar {
+  background: radial-gradient(circle at top, #ffffff, #dfe9f3); /* moonlight */
+  color: #000; /* black font */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+              0 0 30px rgba(200, 200, 255, 0.6);
+  border-radius: 6px;
+  position: relative;
+}
+
+/* Ticker movement */
 .ticker {
   display: flex;
   white-space: nowrap;
@@ -168,7 +182,8 @@
 .ticker__track {
   display: inline-block;
   padding-left: 100%;
-  animation: tickerMove 100s linear infinite; /* slower speed */
+  animation: tickerMove 80s linear infinite; /* slower, smooth scroll */
+  text-shadow: 0 0 5px #fff, 0 0 10px #e6e6e6, 0 0 20px #c0c0ff;
 }
 
 @keyframes tickerMove {
@@ -176,6 +191,7 @@
   100% { transform: translateX(-100%); }
 }
 </style>
+
 
 <section class="bg-slate-800 p-5 rounded shadow mx-3 mb-5">
   <h2 class="font-bold mb-4 text-slate-100 text-center">Quick Single Click (Employees) Login Portals</h2>
